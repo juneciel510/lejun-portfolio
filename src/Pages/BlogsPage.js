@@ -37,7 +37,7 @@ function BlogsPage() {
 const BlogsStyled = styled.div`
   .blog {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-column-gap: 2rem;
     grid-row-gap: 3rem;
     @media screen and (max-width: 770px) {
@@ -66,7 +66,7 @@ const BlogsStyled = styled.div`
     .title {
       a {
         text-decoration: none;
-        font-size: 1.8rem;
+        font-size: 1rem;
         padding: 2rem 0;
         color: var(--white-color);
         cursor: pointer;

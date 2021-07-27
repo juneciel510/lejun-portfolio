@@ -109,7 +109,7 @@ function ContactPage() {
                   name="message"
                   id="textarea"
                   cols="30"
-                  rows="10"
+                  rows="6"
                 ></textarea>
               </div>
               <div className="form-field f-button">
@@ -130,13 +130,13 @@ function ContactPage() {
               title={"Email"}
               icon={email}
               cont1={"chenlejun@gmail.com"}
-              cont2={""}
+              // cont2={""}
             />
             <ContactItem
               title={"Address"}
               icon={location}
-              cont1={"Stavanger"}
-              cont2={"Norway"}
+              cont1={"Stavanger, Norway"}
+              // cont2={""}
             />
           </div>
           {isOpen && (
@@ -144,7 +144,7 @@ function ContactPage() {
               className="popup-button"
               content={
                 <>
-                  <b>Message sent !</b>
+                  <b>Message Sent !</b>
                 </>
               }
               handleClose={togglePopup}
@@ -160,7 +160,7 @@ const ContactPageStyled = styled.section`
   .popup-button {
     outline: none;
     border: none;
-    background-color: var(--background-light-color-2);
+    background-color: var(--primary-color);
     padding: 0.4rem 2rem;
     font-size: inherit;
     color: var(--white-color);
@@ -177,7 +177,7 @@ const ContactPageStyled = styled.section`
   }
   .contact-section {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 2fr 1.5fr;
     grid-column-gap: 2rem;
     @media screen and (max-width: 978px) {
       grid-template-columns: repeat(1, 1fr);
@@ -199,7 +199,7 @@ const ContactPageStyled = styled.section`
     .contact-title {
       h4 {
         color: var(--white-color);
-        padding: 1rem 0;
+        padding: 0 0 1rem 0;
         font-size: 1.8rem;
       }
     }
@@ -239,15 +239,18 @@ const ContactPageStyled = styled.section`
           padding: 0.8rem 1rem;
         }
         .send-mail {
+          height: 15px;
+          line-height: 15px;
           background-color: var(--primary-color);
-          padding: 0.8rem 2.5rem;
+          padding: 0.8rem 2.5rem 1.5rem 2.5rem;
           color: white;
           cursor: pointer;
           display: inline-block;
-          font-size: inherit;
+          font-size: 1rem;
           text-transform: uppercase;
           position: relative;
           transition: all 0.4s ease-in-out;
+
           &::after {
             content: "";
             position: absolute;

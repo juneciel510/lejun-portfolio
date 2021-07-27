@@ -73,7 +73,7 @@ function Resume() {
         <div className="resume-content">
           <ResumeItem
             year={"2021 - Present"}
-            title={"Personal Portfolio Website"}
+            title={"Responsive Portfolio Website"}
             text={[
               "Created using different technologies, e.g., React Js, Styled COmponents, etc.",
               "Integrated PDF views, send contact form to email, filter blogs with tags, use various animations and more.",
@@ -96,7 +96,7 @@ function Resume() {
               "Develop an in-depth understanding of project scope and particulars e.g., time frames, financial, outcomes, etc.",
             ]}
           />
-          <ResumeItem year={"2016"} title={"Maternity leave"} text={[" "]} />
+          <ResumeItem year={"2016"} title={"Maternity Leave"} text={[" "]} />
           <ResumeItem
             year={"2010 - 2016"}
             title={"Project Manager Assistant & Document Engineer"}
@@ -110,7 +110,7 @@ function Resume() {
           />
           <ResumeItem
             year={"2009 - 2010"}
-            title={"Maternity leave"}
+            title={"Maternity Leave"}
             text={[" "]}
           />
           <ResumeItem

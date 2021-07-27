@@ -40,8 +40,8 @@ function Menu({ menuItem }) {
 
 const MenuItemStyled = styled.div`
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 2rem;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 2.5rem;
   @media screen and (max-width: 920px) {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -58,7 +58,7 @@ const MenuItemStyled = styled.div`
       }
       h6 {
         margin-top: 1rem;
-        font-size: 1.3rem;
+        font-size: 1rem;
         transition: all 0.4s ease-in-out;
         &:hover {
           color: var(--primary-color);
@@ -66,7 +66,7 @@ const MenuItemStyled = styled.div`
       }
       p {
         margin-top: -0.6rem;
-        font-size: 1rem;
+        font-size: 0.9rem;
       }
       img {
         width: 100%;

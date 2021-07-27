@@ -24,7 +24,7 @@ const ButtonStyled = styled.button`
   color: var(--white-color);
   cursor: pointer;
   transition: all 0.4s ease-in-out;
-  margin-bottom: 0.6rem;
+  margin-bottom: 2.3rem;
   &:active,
   &:focus {
     background-color: var(--primary-color);
@@ -43,6 +43,6 @@ const ButtonsStyled = styled.div`
   align-items: center;
   flex-wrap: wrap;
   width: 70%;
-  margin: 2.4rem auto;
+  margin: 0rem auto;
 `;
 export default Button;

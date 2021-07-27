@@ -75,7 +75,7 @@ const ResumeItemStyled = styled.div`
     }
     h6 {
       /* padding-bottom: 0.6rem; */
-      font-size: 1.3rem;
+      font-size: 1.2rem;
     }
   }
 `;
