@@ -40,7 +40,13 @@ const BlogsStyled = styled.div`
     grid-template-columns: repeat(4, 1fr);
     grid-column-gap: 2rem;
     grid-row-gap: 3rem;
-    @media screen and (max-width: 770px) {
+    @media screen and (max-width: 1600px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    @media screen and (max-width: 920px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @media screen and (max-width: 670px) {
       grid-template-columns: repeat(1, 1fr);
     }
     .blog-item {
