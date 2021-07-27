@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/lejun-portfolio/static/css/main.de2bacf8.chunk.css",
-    "main.js": "/lejun-portfolio/static/js/main.15dca2c4.chunk.js",
-    "main.js.map": "/lejun-portfolio/static/js/main.15dca2c4.chunk.js.map",
+    "main.js": "/lejun-portfolio/static/js/main.2e8b1bef.chunk.js",
+    "main.js.map": "/lejun-portfolio/static/js/main.2e8b1bef.chunk.js.map",
     "runtime-main.js": "/lejun-portfolio/static/js/runtime-main.bd2b7db5.js",
     "runtime-main.js.map": "/lejun-portfolio/static/js/runtime-main.bd2b7db5.js.map",
     "static/css/2.7b1c032f.chunk.css": "/lejun-portfolio/static/css/2.7b1c032f.chunk.css",
@@ -30,7 +30,9 @@
     "static/media/port1.714d0531.PNG": "/lejun-portfolio/static/media/port1.714d0531.PNG",
     "static/media/react_styled.c23ef94e.png": "/lejun-portfolio/static/media/react_styled.c23ef94e.png",
     "static/media/reliable.b1adb3cd.svg": "/lejun-portfolio/static/media/reliable.b1adb3cd.svg",
+    "static/media/resume.00541004.jpg": "/lejun-portfolio/static/media/resume.00541004.jpg",
     "static/media/resume1.6ed9b374.jpg": "/lejun-portfolio/static/media/resume1.6ed9b374.jpg",
+    "static/media/resume3.70b83911.jpg": "/lejun-portfolio/static/media/resume3.70b83911.jpg",
     "static/media/sample.17ec06d9.pdf": "/lejun-portfolio/static/media/sample.17ec06d9.pdf",
     "static/media/sidebar1.db0c1d14.jpg": "/lejun-portfolio/static/media/sidebar1.db0c1d14.jpg"
   },
@@ -39,6 +41,6 @@
     "static/css/2.7b1c032f.chunk.css",
     "static/js/2.96da9509.chunk.js",
     "static/css/main.de2bacf8.chunk.css",
-    "static/js/main.15dca2c4.chunk.js"
+    "static/js/main.2e8b1bef.chunk.js"
   ]
 }
