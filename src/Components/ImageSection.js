@@ -9,7 +9,7 @@ function ImageSection() {
   return (
     <ImageSectionStyled>
       <div className="left-content">
-        <img src={resume3} alt="" />
+        <img src={resume1} alt="" />
       </div>
       <div className="right-content">
         <h4>

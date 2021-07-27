@@ -87,9 +87,7 @@ function ContactPage() {
       <ContactPageStyled>
         <InnerLayout className={"contact-section"}>
           <div className="left-content">
-            <div className="contact-title">
-              <h4>Get In Touch</h4>
-            </div>
+            <div className="contact-title">{/* <h4>Get In Touch</h4> */}</div>
             <form className="form" onSubmit={sendEmail}>
               <div className="form-field">
                 <label htmlFor="name">Enter your name*</label>
@@ -161,7 +159,7 @@ const ContactPageStyled = styled.section`
     outline: none;
     border: none;
     background-color: var(--primary-color);
-    padding: 0.4rem 2rem;
+    padding: 0rem 2rem;
     font-size: inherit;
     color: var(--white-color);
     cursor: pointer;
@@ -191,7 +189,7 @@ const ContactPageStyled = styled.section`
       height: 60%;
       align-items: center;
       position: relative;
-      top: 20%;
+      top: 4%;
       @media screen and (max-width: 502px) {
         width: 70%;
       }
@@ -209,7 +207,7 @@ const ContactPageStyled = styled.section`
         width: 100%;
       }
       .form-field {
-        margin-top: 2rem;
+        margin-bottom: 2rem;
         position: relative;
         width: 100%;
         label {

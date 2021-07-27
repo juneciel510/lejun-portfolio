@@ -11,7 +11,7 @@ function Skills() {
       <InnerLayout>
         <div className="skills">
           <ProgressBar title={"JAVASCRIPT"} width={"70%"} text={"70%"} />
-          <ProgressBar title={"CSS"} width={"65%"} text={"65%"} />
+          <ProgressBar title={"CSS"} width={"70%"} text={"70%"} />
           <ProgressBar title={"GO"} width={"75%"} text={"75%"} />
           <ProgressBar title={"React JS"} width={"70%"} text={"70%"} />
           <ProgressBar title={"PYTHON"} width={"80%"} text={"80%"} />
