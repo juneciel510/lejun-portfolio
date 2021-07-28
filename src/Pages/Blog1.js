@@ -15,8 +15,8 @@ function Blog1() {
           <h4 className="sub-title">Flex Box</h4>
           <TryButton url="https://codepen.io/WebDevSimplified/pen/rqNVVb" />
         </div>
-        <div className="w3-responsive">
-          <table className="w3-table w3-striped">
+        <div className="table-container">
+          <table className="table">
             <tr>
               <th>First Name</th>
               <th>Last Name</th>
@@ -43,8 +43,9 @@ function Blog1() {
 }
 
 const BlogsStyled = styled.div`
-  .w3-responsive {
+  .table {
     width: 60%;
+    color: var(--white-color);
   }
 `;
 export default Blog1;

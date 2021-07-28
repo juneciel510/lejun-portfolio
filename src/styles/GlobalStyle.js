@@ -101,7 +101,9 @@ a{
 p{
     color: inherit;
 }
-
+table{
+    color: var(--white-color);
+}
 h1{
     font-size: 4rem;
     color: var(--white-color);
