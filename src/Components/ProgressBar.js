@@ -17,16 +17,22 @@ function ProgressBar({ title, width, text }) {
 
 const ProgressBarStyled = styled.div`
   .progress-bar {
-    display: inline;
+    background-color: var(--background-dark-color);
+    /* display: inline; */
+    display: grid;
+    grid-template-columns: 1fr 7fr;
     align-items: center;
     p {
       padding-right: 1.1rem;
       text-align: left;
+      color: var(--font-light-color);
+      width: 3rem;
     }
     .progress {
       position: relative;
       width: 100%;
       height: 0.4rem;
+      top: -20%;
       background-color: var(--border-color);
       span {
         position: absolute;

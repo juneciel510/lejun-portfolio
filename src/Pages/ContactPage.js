@@ -158,7 +158,7 @@ const ContactPageStyled = styled.section`
   .popup-button {
     outline: none;
     border: none;
-    background-color: var(--primary-color);
+    background-color: var(--background-light-color-2);
     padding: 0rem 2rem;
     font-size: inherit;
     color: var(--white-color);
@@ -239,7 +239,7 @@ const ContactPageStyled = styled.section`
         .send-mail {
           height: 15px;
           line-height: 15px;
-          background-color: var(--primary-color);
+          background-color: var(--background-light-color-2);
           padding: 0.8rem 2.5rem 1.5rem 2.5rem;
           color: white;
           cursor: pointer;

@@ -2,33 +2,49 @@ import React, { useState } from "react";
 import { Document, Page, pdfjs } from "react-pdf";
 import styled from "styled-components";
 import pdfFile from "../files/ExamReport_Lejun4.pdf";
-import pdfFile2 from "./sample.pdf";
+import TryButton from "../Components/TryButton";
 
 import { MainLayout, InnerLayout } from "../styles/Layouts";
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
-function Blog1(props) {
-  const [file, setFile] = useState(pdfFile);
-  const [numPages, setNumPages] = useState(null);
-  const [pageNumber, setPageNumber] = useState(1);
-
-  function onDocumentLoadSuccess({ numPages }) {
-    setNumPages(numPages);
-    setPageNumber(1);
-  }
-
+function Blog1() {
   return (
     <MainLayout>
       <BlogsStyled>
-        <Document file={pdfFile} onLoadSuccess={onDocumentLoadSuccess}>
-          <Page pageNumber={pageNumber} />
-        </Document>
-        <p>
-          Page {pageNumber} of {numPages}
-        </p>
+        <h2 className="title">About CSS Styling</h2>
+        <div className="container">
+          <h4 className="sub-title">Flex Box</h4>
+          <TryButton url="https://codepen.io/WebDevSimplified/pen/rqNVVb" />
+        </div>
+        <div className="w3-responsive">
+          <table className="w3-table w3-striped">
+            <tr>
+              <th>First Name</th>
+              <th>Last Name</th>
+            </tr>
+            <tr>
+              <td>Flex Box</td>
+              <td>
+                <TryButton url="https://codepen.io/WebDevSimplified/pen/rqNVVb" />
+              </td>
+            </tr>
+            <tr>
+              <td>Flex Box</td>
+              <td>normal</td>
+            </tr>
+            <tr>
+              <td>Flex Box</td>
+              <td>normal</td>
+            </tr>
+          </table>
+        </div>
       </BlogsStyled>
     </MainLayout>
   );
 }
 
-const BlogsStyled = styled.div``;
+const BlogsStyled = styled.div`
+  .w3-responsive {
+    width: 60%;
+  }
+`;
 export default Blog1;

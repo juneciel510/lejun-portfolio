@@ -98,6 +98,10 @@ a{
     font-size: 1rem;
 }
 
+p{
+    color: inherit;
+}
+
 h1{
     font-size: 4rem;
     color: var(--white-color);

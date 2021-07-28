@@ -96,7 +96,7 @@ function App() {
             <ContactPage />
           </Route>
           <Route path="/blog1" exact>
-            <ComingSoon />
+            <Blog1 />
           </Route>
           <Route path="/blog2" exact>
             <ComingSoon />
