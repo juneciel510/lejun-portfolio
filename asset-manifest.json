@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/lejun-portfolio/static/css/main.de2bacf8.chunk.css",
-    "main.js": "/lejun-portfolio/static/js/main.913a2338.chunk.js",
-    "main.js.map": "/lejun-portfolio/static/js/main.913a2338.chunk.js.map",
+    "main.js": "/lejun-portfolio/static/js/main.41dec429.chunk.js",
+    "main.js.map": "/lejun-portfolio/static/js/main.41dec429.chunk.js.map",
     "runtime-main.js": "/lejun-portfolio/static/js/runtime-main.bd2b7db5.js",
     "runtime-main.js.map": "/lejun-portfolio/static/js/runtime-main.bd2b7db5.js.map",
-    "static/css/2.7b1c032f.chunk.css": "/lejun-portfolio/static/css/2.7b1c032f.chunk.css",
-    "static/js/2.96da9509.chunk.js": "/lejun-portfolio/static/js/2.96da9509.chunk.js",
-    "static/js/2.96da9509.chunk.js.map": "/lejun-portfolio/static/js/2.96da9509.chunk.js.map",
+    "static/css/2.425057de.chunk.css": "/lejun-portfolio/static/css/2.425057de.chunk.css",
+    "static/js/2.abf0a3a6.chunk.js": "/lejun-portfolio/static/js/2.abf0a3a6.chunk.js",
+    "static/js/2.abf0a3a6.chunk.js.map": "/lejun-portfolio/static/js/2.abf0a3a6.chunk.js.map",
     "index.html": "/lejun-portfolio/index.html",
-    "static/css/2.7b1c032f.chunk.css.map": "/lejun-portfolio/static/css/2.7b1c032f.chunk.css.map",
+    "static/css/2.425057de.chunk.css.map": "/lejun-portfolio/static/css/2.425057de.chunk.css.map",
     "static/css/main.de2bacf8.chunk.css.map": "/lejun-portfolio/static/css/main.de2bacf8.chunk.css.map",
-    "static/js/2.96da9509.chunk.js.LICENSE.txt": "/lejun-portfolio/static/js/2.96da9509.chunk.js.LICENSE.txt",
+    "static/js/2.abf0a3a6.chunk.js.LICENSE.txt": "/lejun-portfolio/static/js/2.abf0a3a6.chunk.js.LICENSE.txt",
     "static/media/ExamReport_Lejun4.fac3746b.pdf": "/lejun-portfolio/static/media/ExamReport_Lejun4.fac3746b.pdf",
     "static/media/ML_lab3.27f5ba22.pdf": "/lejun-portfolio/static/media/ML_lab3.27f5ba22.pdf",
     "static/media/ML_lab3.d4b77e4e.PNG": "/lejun-portfolio/static/media/ML_lab3.d4b77e4e.PNG",
@@ -33,14 +33,13 @@
     "static/media/resume.00541004.jpg": "/lejun-portfolio/static/media/resume.00541004.jpg",
     "static/media/resume1.6ed9b374.jpg": "/lejun-portfolio/static/media/resume1.6ed9b374.jpg",
     "static/media/resume3.70b83911.jpg": "/lejun-portfolio/static/media/resume3.70b83911.jpg",
-    "static/media/sample.17ec06d9.pdf": "/lejun-portfolio/static/media/sample.17ec06d9.pdf",
     "static/media/sidebar1.db0c1d14.jpg": "/lejun-portfolio/static/media/sidebar1.db0c1d14.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.bd2b7db5.js",
-    "static/css/2.7b1c032f.chunk.css",
-    "static/js/2.96da9509.chunk.js",
+    "static/css/2.425057de.chunk.css",
+    "static/js/2.abf0a3a6.chunk.js",
     "static/css/main.de2bacf8.chunk.css",
-    "static/js/main.913a2338.chunk.js"
+    "static/js/main.41dec429.chunk.js"
   ]
 }
