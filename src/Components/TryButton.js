@@ -3,9 +3,7 @@ import styled from "styled-components";
 const TryButton = ({ url }) => {
   return (
     <TryBtnStyled>
-      <a className="w3-button" href={url}>
-        Try it Yourself »
-      </a>
+      <a href={url}>Try it Yourself »</a>
     </TryBtnStyled>
   );
 };
@@ -13,7 +11,7 @@ const TryButton = ({ url }) => {
 const TryBtnStyled = styled.div`
   a {
     text-decoration: none;
-    padding: 0.5rem 1rem;
+    padding: 0.3rem 1rem;
     color: white;
     background-color: var(--primary-color);
     border-radius: 10px;

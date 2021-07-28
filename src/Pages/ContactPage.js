@@ -241,7 +241,7 @@ const ContactPageStyled = styled.section`
           line-height: 15px;
           background-color: var(--background-light-color-2);
           padding: 0.8rem 2.5rem 1.5rem 2.5rem;
-          color: white;
+          color: var(--white-color);
           cursor: pointer;
           display: inline-block;
           font-size: 1rem;

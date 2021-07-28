@@ -10,6 +10,7 @@ import BlogsPage from "./Pages/BlogsPage";
 import ContactPage from "./Pages/ContactPage";
 import Blog1 from "./Pages/Blog1";
 import Blog2 from "./Pages/Blog2";
+import Blog3 from "./Pages/Blog3";
 import Portfolio1 from "./Pages/Portfolio1";
 import Portfolio2 from "./Pages/Portfolio2";
 import Portfolio3 from "./Pages/Portfolio3";
@@ -99,7 +100,10 @@ function App() {
             <Blog1 />
           </Route>
           <Route path="/blog2" exact>
-            <ComingSoon />
+            <Blog2 />
+          </Route>
+          <Route path="/blog3" exact>
+            <Blog3 />
           </Route>
           {/* {portfolios.map((item, index) => (
             <Route path={item.internalLink} exact>
