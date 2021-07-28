@@ -82,10 +82,10 @@ function Blog1() {
 
 const BlogsStyled = styled.div`
   .title {
-    text-align: center;
+    color: var(--primary-color);
   }
   .table-container {
-    margin-top: 1.5rem;
+    margin-top: 2.5rem;
     color: var(--white-color);
     padding: 0.3rem, 2rem;
   }

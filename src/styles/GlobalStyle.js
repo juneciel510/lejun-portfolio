@@ -62,7 +62,7 @@ const GlobalStyle = createGlobalStyle`
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    list-style: none;
+    /* list-style: none; */
     text-decoration: none;
     font-family: 'Nunito', sans-serif;
     font-size: 1.1rem;

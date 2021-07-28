@@ -56,8 +56,11 @@ const Blog2 = () => {
 };
 
 const BlogsStyled = styled.div`
+  .title {
+    color: var(--primary-color);
+  }
   .table-container {
-    margin-top: 1.5rem;
+    margin-top: 2.5rem;
     color: var(--white-color);
     Td {
       height: 4rem;
