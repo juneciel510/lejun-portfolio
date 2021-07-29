@@ -24,6 +24,7 @@ code {
 }
 
 .App-logo {
+  margin-left: 10rem;
   height: 20vmin;
   pointer-events: none;
   color: var(--primary-color);
