@@ -2,7 +2,7 @@ import css1 from "../img/portImages/cv_css.png";
 import css2 from "../img/portImages/ms.png";
 import react1 from "../img/portImages/react_styled.png";
 import img2 from "../img/portImages/maya-4.jpg";
-import port1 from "../img/portImages/port1.PNG";
+import port1 from "../img/portImages/port1.png";
 import paxos1 from "../img/portImages/paxos1.PNG";
 import ML1 from "../img/portImages/ML_lab3.PNG";
 
