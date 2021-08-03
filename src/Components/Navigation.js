@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { NavLink } from "react-router-dom";
 import avatar from "../img/avatar.jpg";
 import sidebar1 from "../img/sidebar1.jpg";
+import WeatherButton from "./WeatherButton";
 
 function Navigation() {
   return (
@@ -46,6 +47,7 @@ function Navigation() {
         <p>
           @2021 <b>Lejun Chen</b>
         </p>
+        <WeatherButton className="weather" />
       </footer>
     </NavigationStyled>
   );
@@ -121,10 +123,14 @@ const NavigationStyled = styled.nav`
     border-top: 1px solid var(--border-color);
     width: 100%;
     p {
-      padding: 1.3rem 0;
+      padding: 1.3rem 0 0rem 0;
       font-size: 1.1rem;
       display: block;
       text-align: center;
+      margin-bottom: 0rem;
+    }
+    .weather {
+      margin-bottom: 1rem;
     }
   }
 `;

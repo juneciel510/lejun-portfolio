@@ -8,6 +8,7 @@ import ResumePage from "./Pages/ResumePage";
 import PortfoliosPage from "./Pages/PortfoliosPage";
 import BlogsPage from "./Pages/BlogsPage";
 import ContactPage from "./Pages/ContactPage";
+import WeatherPage from "./Pages/WeatherPage";
 import Blog1 from "./Pages/Blog1";
 import Blog2 from "./Pages/Blog2";
 import Blog3 from "./Pages/Blog3";
@@ -86,6 +87,9 @@ function App() {
           </Route>
           <Route path="/resume" exact>
             <ResumePage />
+          </Route>
+          <Route path="/weather" exact>
+            <WeatherPage />
           </Route>
           <Route path="/portfolios" exact>
             <PortfoliosPage />
