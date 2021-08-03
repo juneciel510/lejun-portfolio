@@ -18,7 +18,7 @@ const WeatherButtonStyled = styled.div`
     text-decoration: none;
     padding: 0.1rem 0.8rem;
     color: white;
-    background-color: #fc7f03;
+    background-color: var(--weather);
     border-radius: 5px;
     cursor: pointer;
     transition: all 0.4s ease-in-out;
