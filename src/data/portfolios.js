@@ -10,7 +10,7 @@ import bank from "../img/portImages/bank.png";
 const portfolios = [
   {
     id: 1,
-    category: ["Go"],
+    category: ["Academic Report"],
     image: paxos1,
     link1: "https://www.google.com",
     link2: "https://www.google.com",
@@ -26,7 +26,7 @@ const portfolios = [
     link2: "https://www.google.com",
     title:
       "Visualization for Classifiers of Maximum-likelihood, Parzen windows, KNN  ",
-    text: "Academic Report, Machine Learning.",
+    text: "Python, Machine Learning.",
     internalLink: "portfolio2",
   },
   {
@@ -41,7 +41,7 @@ const portfolios = [
   },
   {
     id: 4,
-    category: ["Go", "React JS"],
+    category: ["Go", "React JS", "Javascript", "CSS"],
     image: bank,
     link1: "https://www.google.com",
     link2: "https://www.google.com",

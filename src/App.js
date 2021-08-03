@@ -114,7 +114,7 @@ function App() {
             <Portfolio1 />
           </Route>
           <Route path="/portfolio2" exact>
-            <Portfolio2 />
+            <ComingSoon />
           </Route>
           <Route path="/portfolio3" exact>
             <ComingSoon />
