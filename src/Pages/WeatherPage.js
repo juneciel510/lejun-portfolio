@@ -2,7 +2,10 @@ import React, { Component } from "react";
 import { MainLayout, InnerLayout } from "../styles/Layouts";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Form from "../Components/Form";
+import SearchBar from "../Components/SearchBar";
 import Weather from "../Components/Weather";
+import Particle from "../Components/Particle";
+import styled from "styled-components";
 
 import "weather-icons/css/weather-icons.css";
 const Api_Key = "429736441cf3572838aa10530929f7cd";
@@ -102,19 +105,45 @@ class WeatherPage extends Component {
   };
   render() {
     return (
-      <MainLayout>
-        <Form loadweather={this.getWeather} error={this.state.error} />
-        <Weather
-          cityname={this.state.city}
-          weatherIcon={this.state.icon}
-          temp_celsius={this.state.celsius}
-          temp_max={this.state.temp_max}
-          temp_min={this.state.temp_min}
-          description={this.state.description}
-        />
-      </MainLayout>
+      <WeatherPageStyled>
+        <Particle />
+        <div className="typography">
+          <SearchBar loadweather={this.getWeather} error={this.state.error} />
+          <Weather
+            cityname={this.state.city}
+            weatherIcon={this.state.icon}
+            temp_celsius={this.state.celsius}
+            temp_max={this.state.temp_max}
+            temp_min={this.state.temp_min}
+            description={this.state.description}
+          />
+        </div>
+      </WeatherPageStyled>
     );
   }
 }
+
+const WeatherPageStyled = styled.div`
+  width: 100%;
+  /* height: 100vh; */
+  height: 100%;
+  position: absolute;
+  .typography {
+    position: absolute;
+    top: 35%; 
+    /* margin-top: -35rem; */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100%;
+  }
+  @media screen and (max-width: 670px) {
+    .typography {
+      top: 45%;
+    }
+    @media screen and (max-width: 644px) {
+    margin-top: 12px;
+  }
+`;
 
 export default WeatherPage;

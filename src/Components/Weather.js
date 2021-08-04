@@ -4,9 +4,9 @@ import styled from "styled-components";
 const Weather = (props) => {
   return (
     <WeatherStyled>
-      <div className="container text-light">
+      <div className="container ">
         <div className="Card">
-          <h2 className="text-white py-3">{props.cityname}</h2>
+          <h2 className=" py-3">{props.cityname}</h2>
           <h5 className="py-4">
             <i className={`wi ${props.weatherIcon} display-1`} />
           </h5>
@@ -33,13 +33,19 @@ const Weather = (props) => {
 const WeatherStyled = styled.div`
   font-size: 2rem;
   text-align: center;
-  margin-top: 5rem;
-  .container text-light {
+  margin-top: 3rem;
+  color: unset;
+  color: var(--white-color);
+  height: 100%;
+  .container {
     .card {
       h2 {
         font-size: 2rem;
       }
     }
+  }
+  @media screen and (max-width: 670px) {
+    margin-top: 0rem;
   }
 `;
 export default Weather;
