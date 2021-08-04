@@ -6,7 +6,7 @@ import port1 from "../img/portImages/port1.PNG";
 import paxos1 from "../img/portImages/paxos1.PNG";
 import ML1 from "../img/portImages/ML_lab3.PNG";
 import bank from "../img/portImages/bank.png";
-
+import alice from "../img/portImages/alice.PNG";
 const portfolios = [
   {
     id: 1,
@@ -49,16 +49,16 @@ const portfolios = [
     text: "React JS, Golang, Web Socket, Realtime communication",
     internalLink: "portfolio4",
   },
-  // {
-  //   id: 5,
-  //   category: ["React JS"],
-  //   image: img2,
-  //   link1: "https://www.google.com",
-  //   link2: "https://www.google.com",
-  //   title: "Coming Soon...",
-  //   text: "Coming Soon...",
-  //   internalLink: "portfolio5",
-  // },
+  {
+    id: 5,
+    category: ["Python", "Academic Report"],
+    image: alice,
+    link1: "https://www.google.com",
+    link2: "https://www.google.com",
+    title: "Implementaion of two web servers & their secure communication",
+    text: "Public Key Change, CSPRNG & Symmetric Cipher and Decipher ",
+    internalLink: "portfolio5",
+  },
 ];
 
 export default portfolios;

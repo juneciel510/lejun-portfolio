@@ -137,6 +137,10 @@ const WeatherPageStyled = styled.div`
     text-align: center;
     width: 100%;
   }
+  @media screen and (max-width: 1600px) {
+    .typography {
+      top: 40%;
+    }
   @media screen and (max-width: 670px) {
     .typography {
       top: 45%;

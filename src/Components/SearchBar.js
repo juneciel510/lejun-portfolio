@@ -39,7 +39,7 @@ const SearchBar = (props) => {
 const error = (props) => {
   return (
     <div className="alert alert-danger mx-5" role="alert">
-      Please Enter City and Country...!
+      Please Enter City and Country...
     </div>
   );
 };
@@ -52,12 +52,12 @@ const SearchBarStyled = styled.div`
     margin: auto;
     width: 50%;
   }
-  @media screen and (max-width: 1600px) {
+  /* @media screen and (max-width: 1600px) {
     .row {
       margin: auto;
-      width: 70%;
+      width: 50%;
     }
-  }
+  } */
 
   @media screen and (max-width: 920px) {
     .row {

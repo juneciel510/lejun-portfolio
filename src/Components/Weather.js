@@ -44,6 +44,11 @@ const WeatherStyled = styled.div`
       }
     }
   }
+
+  @media screen and (max-width: 1600px) {
+    margin-top: 2rem;
+  }
+
   @media screen and (max-width: 670px) {
     margin-top: 0rem;
   }
