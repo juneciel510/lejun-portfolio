@@ -1,20 +1,21 @@
 {
   "files": {
     "main.css": "/lejun-portfolio/static/css/main.53a18ad0.chunk.css",
-    "main.js": "/lejun-portfolio/static/js/main.6453435a.chunk.js",
-    "main.js.map": "/lejun-portfolio/static/js/main.6453435a.chunk.js.map",
+    "main.js": "/lejun-portfolio/static/js/main.12d07e93.chunk.js",
+    "main.js.map": "/lejun-portfolio/static/js/main.12d07e93.chunk.js.map",
     "runtime-main.js": "/lejun-portfolio/static/js/runtime-main.bd2b7db5.js",
     "runtime-main.js.map": "/lejun-portfolio/static/js/runtime-main.bd2b7db5.js.map",
-    "static/css/2.425057de.chunk.css": "/lejun-portfolio/static/css/2.425057de.chunk.css",
-    "static/js/2.80ee116f.chunk.js": "/lejun-portfolio/static/js/2.80ee116f.chunk.js",
-    "static/js/2.80ee116f.chunk.js.map": "/lejun-portfolio/static/js/2.80ee116f.chunk.js.map",
+    "static/css/2.aa50bdff.chunk.css": "/lejun-portfolio/static/css/2.aa50bdff.chunk.css",
+    "static/js/2.c3a3e8ee.chunk.js": "/lejun-portfolio/static/js/2.c3a3e8ee.chunk.js",
+    "static/js/2.c3a3e8ee.chunk.js.map": "/lejun-portfolio/static/js/2.c3a3e8ee.chunk.js.map",
     "index.html": "/lejun-portfolio/index.html",
-    "static/css/2.425057de.chunk.css.map": "/lejun-portfolio/static/css/2.425057de.chunk.css.map",
+    "static/css/2.aa50bdff.chunk.css.map": "/lejun-portfolio/static/css/2.aa50bdff.chunk.css.map",
     "static/css/main.53a18ad0.chunk.css.map": "/lejun-portfolio/static/css/main.53a18ad0.chunk.css.map",
-    "static/js/2.80ee116f.chunk.js.LICENSE.txt": "/lejun-portfolio/static/js/2.80ee116f.chunk.js.LICENSE.txt",
+    "static/js/2.c3a3e8ee.chunk.js.LICENSE.txt": "/lejun-portfolio/static/js/2.c3a3e8ee.chunk.js.LICENSE.txt",
     "static/media/ExamReport_Lejun4.fac3746b.pdf": "/lejun-portfolio/static/media/ExamReport_Lejun4.fac3746b.pdf",
     "static/media/ML_lab3.27f5ba22.pdf": "/lejun-portfolio/static/media/ML_lab3.27f5ba22.pdf",
     "static/media/ML_lab3.d4b77e4e.PNG": "/lejun-portfolio/static/media/ML_lab3.d4b77e4e.PNG",
+    "static/media/alice.933d58c5.PNG": "/lejun-portfolio/static/media/alice.933d58c5.PNG",
     "static/media/avatar.0945d7c4.jpg": "/lejun-portfolio/static/media/avatar.0945d7c4.jpg",
     "static/media/bank.bbc1a370.png": "/lejun-portfolio/static/media/bank.bbc1a370.png",
     "static/media/blog1.7ecbb78c.svg": "/lejun-portfolio/static/media/blog1.7ecbb78c.svg",
@@ -35,13 +36,14 @@
     "static/media/resume1.6ed9b374.jpg": "/lejun-portfolio/static/media/resume1.6ed9b374.jpg",
     "static/media/resume3.70b83911.jpg": "/lejun-portfolio/static/media/resume3.70b83911.jpg",
     "static/media/sidebar1.db0c1d14.jpg": "/lejun-portfolio/static/media/sidebar1.db0c1d14.jpg",
-    "static/media/snow.d9b52451.png": "/lejun-portfolio/static/media/snow.d9b52451.png"
+    "static/media/snow.d9b52451.png": "/lejun-portfolio/static/media/snow.d9b52451.png",
+    "static/media/weather-icons.css": "/lejun-portfolio/static/media/weathericons-regular-webfont.e4d2c00e.woff"
   },
   "entrypoints": [
     "static/js/runtime-main.bd2b7db5.js",
-    "static/css/2.425057de.chunk.css",
-    "static/js/2.80ee116f.chunk.js",
+    "static/css/2.aa50bdff.chunk.css",
+    "static/js/2.c3a3e8ee.chunk.js",
     "static/css/main.53a18ad0.chunk.css",
-    "static/js/main.6453435a.chunk.js"
+    "static/js/main.12d07e93.chunk.js"
   ]
 }
