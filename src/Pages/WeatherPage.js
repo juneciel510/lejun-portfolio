@@ -130,7 +130,7 @@ const WeatherPageStyled = styled.div`
   position: absolute;
   .typography {
     position: absolute;
-    top: 35%; 
+    top: 35%;
     /* margin-top: -35rem; */
     left: 50%;
     transform: translate(-50%, -50%);
@@ -141,11 +141,15 @@ const WeatherPageStyled = styled.div`
     .typography {
       top: 40%;
     }
+  }
   @media screen and (max-width: 670px) {
     .typography {
+      width: 85%;
+      margin: auto;
       top: 45%;
     }
-    @media screen and (max-width: 644px) {
+  }
+  @media screen and (max-width: 644px) {
     margin-top: 12px;
   }
 `;

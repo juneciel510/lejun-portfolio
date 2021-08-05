@@ -12,6 +12,7 @@ import WeatherPage from "./Pages/WeatherPage";
 import Blog1 from "./Pages/Blog1";
 import Blog2 from "./Pages/Blog2";
 import Blog3 from "./Pages/Blog3";
+import Blog4 from "./Pages/Blog4";
 import Portfolio1 from "./Pages/Portfolio1";
 import Portfolio2 from "./Pages/Portfolio2";
 import Portfolio3 from "./Pages/Portfolio3";
@@ -108,6 +109,9 @@ function App() {
           </Route>
           <Route path="/blog3" exact>
             <Blog3 />
+          </Route>
+          <Route path="/blog4" exact>
+            <Blog4 />
           </Route>
           {/* {portfolios.map((item, index) => (
             <Route path={item.internalLink} exact>

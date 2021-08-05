@@ -31,16 +31,13 @@ const Weather = (props) => {
 };
 
 const WeatherStyled = styled.div`
-  font-size: 2rem;
   text-align: center;
   margin-top: 3rem;
-  color: unset;
   color: var(--white-color);
   height: 100%;
   .container {
     .card {
       h2 {
-        font-size: 2rem;
       }
     }
   }

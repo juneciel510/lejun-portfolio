@@ -11,19 +11,23 @@ const TryButton = ({ url }) => {
 const TryBtnStyled = styled.div`
   a {
     text-decoration: none;
-    padding: 0.3rem 1rem;
-    color: white;
-    background-color: var(--primary-color);
+    /* text-decoration: revert; */
+    padding: 0.3rem 0.7rem;
+    color: var(--font-light-color);
+    /* background-color: var(--primary-color); */
+    background: transparent;
     border-radius: 10px;
+    border: 2px solid var(--primary-color);
     cursor: pointer;
     transition: all 0.4s ease-in-out;
     &:hover {
-      background-color: #519ced;
+      /* background-color: var(--primary-color); */
+      color: var(--primary-color);
     }
   }
   a.active {
     text-decoration: none;
-    padding: 0.5rem 1rem;
+    padding: 0.3rem 0.7rem;
     color: white;
     background-color: var(--primary-color);
     border-radius: 10px;

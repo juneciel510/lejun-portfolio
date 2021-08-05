@@ -28,14 +28,14 @@ const blogs = [
     image: blog3,
     link: "/blog3",
   },
-  // {
-  //   id: 4,
-  //   title: "Coming Soon...",
-  //   date: "01",
-  //   month: "April",
-  //   image: blog4,
-  //   link: "/blog1",
-  // },
+  {
+    id: 4,
+    title: "Good tutorials",
+    date: "01",
+    month: "April",
+    image: blog4,
+    link: "/blog4",
+  },
   // {
   //   id: 5,
   //   title: "Coming Soon...",
