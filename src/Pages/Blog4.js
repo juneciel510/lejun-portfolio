@@ -41,7 +41,11 @@ const Blog4 = () => {
                   YouTube
                 </a>
               </Td>
-              <Td></Td>
+              <Td>
+                <a href="https://www.youtube.com/playlist?list=PL7TLF4T4Tq2RCWa-ZRkEWXVtXteyZ2CjK">
+                  YouTube
+                </a>
+              </Td>
             </Tr>
             <Tr>
               <Td> to be continued...</Td>
