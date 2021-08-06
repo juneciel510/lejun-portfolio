@@ -73,7 +73,11 @@ function Blog1() {
                   YouTube
                 </a>
               </Td>
-              <Td>Initial, Inherit, Unset, Revert</Td>
+              <Td>
+                <a href="https://www.youtube.com/watch?v=dFSxBi2zGfM&list=PL7TLF4T4Tq2RCWa-ZRkEWXVtXteyZ2CjK&index=14">
+                  YouTube
+                </a>
+              </Td>
             </Tr>
             <Tr>
               <Td>to be continued...</Td>

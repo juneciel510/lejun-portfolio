@@ -134,11 +134,11 @@ h1{
 }
 
 h2{
-    font-size: 3.5rem;
+    font-size: 2.7rem;
     color: var(--white-color);
     
     span{
-        font-size: 3.5rem;
+        font-size: 2.7rem;
         @media screen and (max-width: 502px){
             font-size: 1.6rem;
             padding-bottom: 0;
@@ -151,11 +151,11 @@ h2{
 }
 
 h3{
-    font-size: 3rem;
+    font-size: 2.5rem;
     color: var(--white-color);
     
     span{
-        font-size: 3rem;
+        font-size: 2.5rem;
         color: var(--primary-color);
         @media screen and (max-width: 502px){
             font-size: 1.4rem;
@@ -169,11 +169,11 @@ h3{
 }
 
 h4{
-    font-size: 2.2rem;
+    font-size: 1.8rem;
     color: var(--white-color);
     
     span{
-        font-size: 2.2rem;
+        font-size: 1.8rem;
         color: var(--primary-color);
         @media screen and (max-width: 502px){
             font-size: 1.3rem;
@@ -187,9 +187,16 @@ h4{
 }
 
 h5{
-    font-size: 1.7rem;
+    font-size: 1.3rem;
     color: var(--white-color);
-    
+    span{
+        font-size: 1.3rem;
+        color: var(--primary-color);
+        @media screen and (max-width: 502px){
+            font-size: 1.2rem;
+            padding-bottom: 0;
+        }
+    } 
     
     @media screen and (max-width: 502px){
         font-size: 1.2rem;

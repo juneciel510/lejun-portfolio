@@ -10,7 +10,7 @@ function ResumeItem({ year, title, subTitle, text }) {
         </div>
           )} */}
       <div className="left-content">
-        <h5>{year}</h5>
+        <h6>{year}</h6>
       </div>
 
       <div className="right-content">
@@ -28,7 +28,7 @@ const ResumeItemStyled = styled.div`
   display: grid;
   grid-template-columns: 1fr 5fr;
   h5 {
-    font-size: 1.2rem;
+    /* font-size: 1.2rem; */
   }
   @media screen and (max-width: 502px) {
     display: block;

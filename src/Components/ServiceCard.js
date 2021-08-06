@@ -6,7 +6,7 @@ function ServiceCard({ image, title, paragraph }) {
     <ServiceCardStyled>
       <div className="container">
         <img src={image} alt="" width="85px" />
-        <h4>{title}</h4>
+        <h6>{title}</h6>
       </div>
     </ServiceCardStyled>
   );
@@ -25,7 +25,7 @@ const ServiceCardStyled = styled.div`
   }
   .container {
     padding: 1.2rem;
-    h4 {
+    h6 {
       color: var(--white-color);
       /* font-size: 1.35rem; */
       padding: 1rem 0;
