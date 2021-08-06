@@ -15,7 +15,7 @@ const Blog4 = () => {
         <Table>
           <Thead>
             <Tr>
-              <Th>Name</Th>
+              <Th>Title</Th>
               <Th>Link 1</Th>
               <Th>Link 2</Th>
             </Tr>
