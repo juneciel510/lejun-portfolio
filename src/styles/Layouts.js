@@ -9,7 +9,8 @@ export const MainLayout = styled.div`
         padding: 3rem;
     } */
   @media screen and (max-width: 571px) {
-    padding: 2rem 0.4rem;
+    padding: 2rem 1.2rem 2rem 0.8rem;
+    margin-right: 0.5rem;
   }
 `;
 export const InnerLayout = styled.div`

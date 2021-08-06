@@ -68,6 +68,9 @@ const GlobalStyle = createGlobalStyle`
     text-decoration: none;
     font-family: 'Nunito', sans-serif;
     font-size: 1.1rem;
+    @media screen and (max-width: 502px) {
+    font-size: 1rem;
+
     
 }
 
@@ -106,7 +109,7 @@ p{
     padding-bottom: .6rem;
     margin-bottom:0;
     @media screen and (max-width: 502px){
-        font-size: 0.9rem;
+        font-size: 1.0rem;
         margin-bottom: 0rem;
         margin-block-end: 0;
         margin-block-start: 0rem
@@ -137,12 +140,12 @@ h2{
     span{
         font-size: 3.5rem;
         @media screen and (max-width: 502px){
-            font-size: 1.5rem;
+            font-size: 1.6rem;
             padding-bottom: 0;
         }
     }
     @media screen and (max-width: 502px){
-        font-size: 1.5rem;
+        font-size: 1.6rem;
         
     }
 }
@@ -155,12 +158,12 @@ h3{
         font-size: 3rem;
         color: var(--primary-color);
         @media screen and (max-width: 502px){
-            font-size: 1.3rem;
+            font-size: 1.4rem;
             padding-bottom: 0;
         }
     }
     @media screen and (max-width: 502px){
-        font-size: 1.3rem;
+        font-size: 1.4rem;
         
     }
 }
@@ -173,12 +176,12 @@ h4{
         font-size: 2.2rem;
         color: var(--primary-color);
         @media screen and (max-width: 502px){
-            font-size: 1.2rem;
+            font-size: 1.3rem;
             padding-bottom: 0;
         }
     }
     @media screen and (max-width: 502px){
-        font-size: 1.2rem;
+        font-size: 1.3rem;
         
     }
 }
@@ -189,7 +192,7 @@ h5{
     
     
     @media screen and (max-width: 502px){
-        font-size: 1.1rem;
+        font-size: 1.2rem;
         
     }
 }
@@ -202,7 +205,7 @@ h6{
     font-size: 1.2rem;
     padding-bottom: .6rem;
     @media screen and (max-width: 502px){
-        font-size: 1.0rem;
+        font-size: 1.1rem;
         
     }
 }

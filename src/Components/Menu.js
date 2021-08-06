@@ -50,6 +50,7 @@ const MenuItemStyled = styled.div`
   }
   @media screen and (max-width: 670px) {
     grid-template-columns: repeat(1, 1fr);
+    grid-gap: 1rem;
   }
   .grid-item {
     .portfolio-content {
@@ -61,7 +62,10 @@ const MenuItemStyled = styled.div`
       }
       h6 {
         margin-top: 1rem;
-        font-size: 1rem;
+        font-size: 1.1rem;
+        @media screen and (max-width: 502px) {
+          font-size: 1rem;
+        }
         transition: all 0.4s ease-in-out;
         &:hover {
           color: var(--primary-color);
@@ -69,7 +73,7 @@ const MenuItemStyled = styled.div`
       }
       p {
         margin-top: -0.6rem;
-        font-size: 0.9rem;
+        font-size: 0.98rem;
       }
       img {
         width: 100%;

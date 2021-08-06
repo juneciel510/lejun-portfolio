@@ -14,10 +14,6 @@ export const ResponsiveTable = styled.div`
   .responsiveTable tr {
   }
 
-  .responsiveTable #text {
-    padding-left: 0.5rem;
-  }
-
   .responsiveTable thread {
     color: var(--white-color);
   }
@@ -28,6 +24,18 @@ export const ResponsiveTable = styled.div`
 
   .responsiveTable tbody tr:nth-child(odd) {
     background: var(--background-light-color-2);
+  }
+  @media screen and (max-width: 502px) {
+    .responsiveTable td .tdBefore {
+      left: 0;
+    }
+    .responsiveTable tbody {
+      font-size: 0.7rem;
+    }
+
+    .responsiveTable td.pivoted {
+      padding-left: calc(35% + 10px) !important;
+    }
   }
 `;
 

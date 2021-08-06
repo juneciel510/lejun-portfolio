@@ -53,7 +53,7 @@ const ButtonsStyled = styled.div`
   width: 70%;
   margin: 0rem auto;
   @media screen and (max-width: 502px) {
-    margin-bottom: 0.8rem;
+    margin-bottom: 1rem;
   }
 `;
 export default Button;
