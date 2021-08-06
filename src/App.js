@@ -19,6 +19,7 @@ import Portfolio3 from "./Pages/Portfolio3";
 import Portfolio4 from "./Pages/Portfolio4";
 import Portfolio5 from "./Pages/Portfolio5";
 import ComingSoon from "./Pages/ComingSoon";
+import ComingSoon2 from "./Pages/ComingSoon2";
 import Brightness4Icon from "@material-ui/icons/Brightness4";
 import MenuIcon from "@material-ui/icons/Menu";
 import { Route, Switch as Switching } from "react-router";
@@ -122,7 +123,7 @@ function App() {
             <Portfolio1 />
           </Route>
           <Route path="/portfolio2" exact>
-            <ComingSoon />
+            <ComingSoon2 />
           </Route>
           <Route path="/portfolio3" exact>
             <ComingSoon />
@@ -131,7 +132,7 @@ function App() {
             <ComingSoon />
           </Route>
           <Route path="/portfolio5" exact>
-            <ComingSoon />
+            <ComingSoon2 />
           </Route>
         </Switching>
       </MainContentStyled>
