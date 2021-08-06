@@ -18,17 +18,17 @@ const TitleStyled = styled.div`
   position: relative;
   h2 {
     color: var(--white-color);
-    font-size: 3.1rem;
+    /* font-size: 3.1rem; */
     font-weight: 600;
     text-transform: uppercase;
     position: relative;
     padding-bottom: 0.7rem;
-    @media screen and (max-width: 496px) {
+    /* @media screen and (max-width: 496px) {
       font-size: 2.8rem;
     }
     @media screen and (max-width: 370px) {
       font-size: 2rem;
-    }
+    } */
     &::before {
       content: "";
       position: absolute;

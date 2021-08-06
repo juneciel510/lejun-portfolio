@@ -4,7 +4,7 @@ import styled from "styled-components";
 function ProgressBar({ title, width, text }) {
   return (
     <ProgressBarStyled>
-      <h6>{title}</h6>
+      <h5>{title}</h5>
       <div className="progress-bar">
         <p>{text}</p>
         <div className="progress">

@@ -78,12 +78,15 @@ const NavigationStyled = styled.nav`
     text-decoration: none;
     width: 100%;
     text-align: center;
+    padding-left: 0;
     .active-class {
       background-color: var(--primary-color-light);
       color: white;
     }
+
     li {
       display: block;
+      padding-left: 0;
       a {
         text-decoration: none;
         display: block;
@@ -124,13 +127,22 @@ const NavigationStyled = styled.nav`
     width: 100%;
     p {
       padding: 1.3rem 0 0rem 0;
-      font-size: 1.1rem;
+      font-size: 1rem;
       display: block;
       text-align: center;
       margin-bottom: 0rem;
     }
     .weather {
       margin-bottom: 1rem;
+    }
+  }
+  @media screen and (max-width: 500px) {
+    a {
+      font-size: 0.8rem;
+    }
+    footer p,
+    b {
+      font-size: 0.8rem;
     }
   }
 `;

@@ -38,7 +38,9 @@ const ServicesSectionStyled = styled.section`
     @media screen and (max-width: 950px) {
       grid-template-columns: repeat(2, 1fr);
     }
-    @media screen and (max-width: 650px) {
+
+    @media screen and (max-width: 502px) {
+      margin-top: 2rem;
       grid-template-columns: repeat(1, 1fr);
     }
   }

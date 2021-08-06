@@ -147,6 +147,7 @@ const MainContentStyled = styled.main`
   @media screen and (max-width: 1200px) {
     margin-left: 0;
   }
+
   .lines {
     position: absolute;
     min-height: 100%;

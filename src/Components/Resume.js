@@ -167,5 +167,13 @@ const ResumeStyled = styled.section`
   .resume-content {
     border-left: 2px solid var(--border-color);
   }
+  @media screen and (max-width: 502px) {
+    .u-small-title-margin {
+      /* margin-top: 2rem; */
+    }
+    .small-title {
+      padding-bottom: 0.8rem;
+    }
+  }
 `;
 export default Resume;

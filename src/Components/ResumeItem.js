@@ -10,7 +10,7 @@ function ResumeItem({ year, title, subTitle, text }) {
         </div>
           )} */}
       <div className="left-content">
-        <p>{year}</p>
+        <h5>{year}</h5>
       </div>
 
       <div className="right-content">
@@ -26,21 +26,24 @@ function ResumeItem({ year, title, subTitle, text }) {
 
 const ResumeItemStyled = styled.div`
   display: grid;
-  grid-template-columns: 1fr 3.2fr;
-  @media screen and (max-width: 421px) {
-    p,
-    h5,
-    h6 {
-      font-size: 80%;
-    }
+  grid-template-columns: 1fr 5fr;
+  h5 {
+    font-size: 1.2rem;
+  }
+  @media screen and (max-width: 502px) {
+    display: block;
   }
   &:not(:last-child) {
     padding-bottom: 3rem;
+    @media screen and (max-width: 502px) {
+      padding-bottom: 0.7rem;
+    }
   }
   .left-content {
     width: 50%;
     padding-left: 20px;
     position: relative;
+
     &::before {
       content: "";
       position: absolute;
@@ -59,6 +62,12 @@ const ResumeItemStyled = styled.div`
   .right-content {
     padding-left: 5rem;
     position: relative;
+    h5 {
+      color: var(--primary-color);
+    }
+    @media screen and (max-width: 502px) {
+      margin-top: 1rem;
+    }
     &::before {
       content: "";
       position: absolute;
@@ -67,15 +76,12 @@ const ResumeItemStyled = styled.div`
       height: 2px;
       width: 3rem;
       background-color: var(--border-color);
+      @media screen and (max-width: 502px) {
+        width: 0rem;
+      }
     }
-    h5 {
-      color: var(--primary-color);
-      font-size: 1.7rem;
-      /* padding-bottom: 0.4rem; */
-    }
-    h6 {
-      /* padding-bottom: 0.6rem; */
-      font-size: 1.2rem;
+    @media screen and (max-width: 502px) {
+      padding-left: 0.8rem;
     }
   }
 `;

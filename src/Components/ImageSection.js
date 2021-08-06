@@ -12,9 +12,9 @@ function ImageSection() {
         <img src={resume3} alt="" />
       </div>
       <div className="right-content">
-        <h4>
+        <h3>
           I am <span>Lejun Chen</span>
-        </h4>
+        </h3>
         <p className="paragraph">
           Computer Science student of a two years’ master program at the
           University of Stavanger. Moved to Stavanger in 2019 with the whole
@@ -61,6 +61,9 @@ const ImageSectionStyled = styled.div`
       margin-bottom: 2rem;
     }
   }
+  @media screen and (max-width: 502px) {
+    margin-top: 2rem;
+  }
   .left-content {
     width: 100%;
     img {
@@ -70,14 +73,14 @@ const ImageSectionStyled = styled.div`
   }
   .right-content {
     width: 100%;
-    h4 {
+    /* h4 {
       font-size: 2.2rem;
       color: var(--white-color);
       span {
         font-size: 2rem;
         color: var(--primary-color);
       }
-    }
+    } */
     .paragraph {
       padding: 0.5rem 0;
     }

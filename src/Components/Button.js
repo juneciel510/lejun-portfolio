@@ -35,6 +35,14 @@ const ButtonStyled = styled.button`
 
   &:not(:last-child) {
     margin-right: 0.6rem;
+    @media screen and (max-width: 502px) {
+      margin-right: 0.2rem;
+    }
+  }
+  @media screen and (max-width: 502px) {
+    margin-bottom: 0.6rem;
+    padding: 0.2rem 0.5rem;
+    font-size: 0.9rem;
   }
 `;
 const ButtonsStyled = styled.div`
@@ -44,5 +52,8 @@ const ButtonsStyled = styled.div`
   flex-wrap: wrap;
   width: 70%;
   margin: 0rem auto;
+  @media screen and (max-width: 502px) {
+    margin-bottom: 0.8rem;
+  }
 `;
 export default Button;

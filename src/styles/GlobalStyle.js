@@ -102,6 +102,16 @@ a{
 
 p{
     color: inherit;
+    font-size: 1.1rem;
+    padding-bottom: .6rem;
+    margin-bottom:0;
+    @media screen and (max-width: 502px){
+        font-size: 0.9rem;
+        margin-bottom: 0rem;
+        margin-block-end: 0;
+        margin-block-start: 0rem
+        
+    }
 }
 table{
     color: var(--white-color);
@@ -112,11 +122,75 @@ h1{
     span{
         font-size: 4rem;
         @media screen and (max-width: 502px){
-            font-size: 3rem
+            font-size: 1.8rem
         }
     }
     @media screen and (max-width: 502px){
-        font-size: 3rem
+        font-size: 1.8rem
+    }
+}
+
+h2{
+    font-size: 3.5rem;
+    color: var(--white-color);
+    
+    span{
+        font-size: 3.5rem;
+        @media screen and (max-width: 502px){
+            font-size: 1.5rem;
+            padding-bottom: 0;
+        }
+    }
+    @media screen and (max-width: 502px){
+        font-size: 1.5rem;
+        
+    }
+}
+
+h3{
+    font-size: 3rem;
+    color: var(--white-color);
+    
+    span{
+        font-size: 3rem;
+        color: var(--primary-color);
+        @media screen and (max-width: 502px){
+            font-size: 1.3rem;
+            padding-bottom: 0;
+        }
+    }
+    @media screen and (max-width: 502px){
+        font-size: 1.3rem;
+        
+    }
+}
+
+h4{
+    font-size: 2.2rem;
+    color: var(--white-color);
+    
+    span{
+        font-size: 2.2rem;
+        color: var(--primary-color);
+        @media screen and (max-width: 502px){
+            font-size: 1.2rem;
+            padding-bottom: 0;
+        }
+    }
+    @media screen and (max-width: 502px){
+        font-size: 1.2rem;
+        
+    }
+}
+
+h5{
+    font-size: 1.7rem;
+    color: var(--white-color);
+    
+    
+    @media screen and (max-width: 502px){
+        font-size: 1.1rem;
+        
     }
 }
 
@@ -127,6 +201,10 @@ h6{
     color: var(--white-color);
     font-size: 1.2rem;
     padding-bottom: .6rem;
+    @media screen and (max-width: 502px){
+        font-size: 1.0rem;
+        
+    }
 }
 
 //Utilities
