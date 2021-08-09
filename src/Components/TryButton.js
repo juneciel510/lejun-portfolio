@@ -23,6 +23,8 @@ const TryBtnStyled = styled.div`
     &:hover {
       /* background-color: var(--primary-color); */
       color: var(--primary-color);
+      box-shadow: 1.5px 1.5px 4px var(--primary-color),
+        -1.5px -1.5px 4px var(--primary-color);
     }
   }
   a.active {

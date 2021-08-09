@@ -50,6 +50,8 @@ const HomePageStyled = styled.header`
     h1 {
       span {
         color: var(--primary-color);
+        text-shadow: -1px -1px 20px var(--primary-color),
+          1px 1px 20px var(--primary-color);
       }
     }
 

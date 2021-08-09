@@ -28,6 +28,8 @@ const ComingSoon2Styled = styled.div`
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
+    /* background-position: bottom right; */
+    /* background-size: cover; */
   }
 `;
 

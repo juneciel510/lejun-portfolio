@@ -4,6 +4,12 @@ import "react-super-responsive-table/dist/SuperResponsiveTableStyle.css";
 export const ResponsiveTable = styled.div`
   a {
     /* text-decoration: none; */
+    &:hover {
+      /* background-color: var(--primary-color); */
+      color: var(--primary-color);
+      text-shadow: 1.5px 1.5px 4px var(--primary-color),
+        -1.5px -1.5px 4px var(--primary-color);
+    }
   }
   .responsiveTable {
     height: 3rem;
