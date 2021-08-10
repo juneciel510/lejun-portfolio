@@ -58,7 +58,7 @@ function Blog1() {
             <Tr>
               <Td>CSS Animation</Td>
               <Td>
-                <a href="https://www.youtube.com/watch?v=YszONjKpgg4&list=PLZlA0Gpn_vH8mpXIUHjWoMAAgoCEinL0R">
+                <a href="https://www.youtube.com/watch?v=PjUCq04ebVA&list=PL7TLF4T4Tq2RCWa-ZRkEWXVtXteyZ2CjK&index=33">
                   YouTube
                 </a>
               </Td>
