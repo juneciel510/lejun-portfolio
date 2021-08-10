@@ -8,41 +8,43 @@ import WeatherButton from "./WeatherButton";
 function Navigation() {
   return (
     <NavigationStyled>
-      <div className="avatar">
+      {/* <div className="avatar">
         <img src={sidebar1} alt="" />
+      </div> */}
+      <div className="nav-items">
+        <ul className="nav-items">
+          <li className="nav-item">
+            <NavLink to="/" activeClassName="active-class" exact>
+              Home
+            </NavLink>
+          </li>
+          <li className="nav-item">
+            <NavLink to="/about" activeClassName="active-class" exact>
+              About
+            </NavLink>
+          </li>
+          <li className="nav-item">
+            <NavLink to="/resume" activeClassName="active-class" exact>
+              Resume
+            </NavLink>
+          </li>
+          <li className="nav-item">
+            <NavLink to="/portfolios" activeClassName="active-class" exact>
+              Portfolios
+            </NavLink>
+          </li>
+          <li className="nav-item">
+            <NavLink to="/blogs" activeClassName="active-class" exact>
+              Blogs
+            </NavLink>
+          </li>
+          <li className="nav-item">
+            <NavLink to="/contact" activeClassName="active-class" exact>
+              Contact
+            </NavLink>
+          </li>
+        </ul>
       </div>
-      <ul className="nav-items">
-        <li className="nav-item">
-          <NavLink to="/" activeClassName="active-class" exact>
-            Home
-          </NavLink>
-        </li>
-        <li className="nav-item">
-          <NavLink to="/about" activeClassName="active-class" exact>
-            About
-          </NavLink>
-        </li>
-        <li className="nav-item">
-          <NavLink to="/resume" activeClassName="active-class" exact>
-            Resume
-          </NavLink>
-        </li>
-        <li className="nav-item">
-          <NavLink to="/portfolios" activeClassName="active-class" exact>
-            Portfolios
-          </NavLink>
-        </li>
-        <li className="nav-item">
-          <NavLink to="/blogs" activeClassName="active-class" exact>
-            Blogs
-          </NavLink>
-        </li>
-        <li className="nav-item">
-          <NavLink to="/contact" activeClassName="active-class" exact>
-            Contact
-          </NavLink>
-        </li>
-      </ul>
       <footer className="footer">
         <p>
           @2021 <b>Lejun Chen</b>
@@ -56,7 +58,7 @@ function Navigation() {
 const NavigationStyled = styled.nav`
   text-decoration: none;
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   flex-direction: column;
   align-items: center;
   height: 100%;
@@ -75,16 +77,21 @@ const NavigationStyled = styled.nav`
   }
 
   .nav-items {
+    margin: auto 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-decoration: none;
     width: 100%;
     text-align: center;
     padding-left: 0;
     .active-class {
-      background-color: var(--primary-color-light);
+      background-color: var(--background-light-color-2);
       color: white;
     }
 
     li {
+      width: 100%;
       display: block;
       padding-left: 0;
       a {
