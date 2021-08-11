@@ -89,24 +89,24 @@ function ContactPage() {
           <div className="glasscard">
             <form className="form" onSubmit={sendEmail}>
               <div className="form-field">
-                <label htmlFor="name">Enter your name*</label>
+                <label htmlFor="name">Name*</label>
                 <input type="text" id="name" name="name" />
               </div>
               <div className="form-field">
-                <label htmlFor="phoneNumber">Enter your phone number*</label>
+                <label htmlFor="phoneNumber">Phone number</label>
                 <input type="text" id="phoneNumbername" name="phoneNumber" />
               </div>
               <div className="form-field">
-                <label htmlFor="email">Enter your email*</label>
+                <label htmlFor="email">Email*</label>
                 <input type="email" id="email" name="email" />
               </div>
 
               <div className="form-field">
-                <label htmlFor="subject">Enter your subject</label>
+                <label htmlFor="subject">Subject</label>
                 <input type="text" id="subject" name="subject" />
               </div>
               <div className="form-field full">
-                <label htmlFor="text-area">Enter your Message*</label>
+                <label htmlFor="text-area">Message*</label>
                 <textarea
                   name="message"
                   id="textarea"
@@ -145,13 +145,14 @@ function ContactPage() {
 
 const ContactPageStyled = styled.section`
   /* margin-right: 1rem; */
-  
+
   /* height: 100vh; */
   /* display: flex; */
   justify-content: center;
   align-items: center;
   .glasscard {
-      margin:  0 8rem;
+    /* margin: 0 8rem; */
+    margin: 2vh 12vw;
   }
   .popup-button {
     outline: none;
@@ -171,106 +172,90 @@ const ContactPageStyled = styled.section`
       background-color: var(--primary-color);
     }
   }
-  /* .contact-section {
-    display: grid;
-    grid-template-columns: 2fr 1.5fr;
-    grid-column-gap: 2rem;
-    @media screen and (max-width: 978px) {
-      grid-template-columns: repeat(1, 1fr);
-      .f-button {
-        margin-bottom: 3rem;
-      }
-    }
-    @media screen and (max-width: 502px) {
-      display: initial;
-    } */
 
-    .contact-title {
-      h4 {
-        color: var(--white-color);
-        padding: 0 0 1rem 0;
-      }
-    }
-    .form {
-      width: 100%;
-      display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap:20px;
-      @media screen and (max-width: 502px) {
-        width: 100%;
-      }
-      .full{
-            grid-column: 1 / 3;
-        }
-      .form-field {
-        /* margin-bottom: 2rem; */
-        position: relative;
-        width: 100%;
-        label {
-          /* position: absolute;
-          left: 20px;
-          top: -19px; */
-          display: inline-block;
-          background: transparent;
-          padding: 0 0.5rem;
-          color: inherit;
-        }
-
-        input {
-          border: 1px solid var(--primary-color);
-          outline: none;
-          background: transparent;
-          height: 50px;
-          padding: 0 15px;
-          width: 100%;
-          color: inherit;
-          box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-        }
-        textarea {
-          background-color: transparent;
-          border: 1px solid var(--primary-color);
-          outline: none;
-          color: inherit;
-          width: 100%;
-          padding: 0.8rem 1rem;
-          box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-        }
-        .send-mail {
-          height: 15px;
-          line-height: 15px;
-          background-color: var(--background-light-color-2);
-          padding: 0.8rem 2.5rem 1.5rem 2.5rem;
-          color: var(--white-color);
-          cursor: pointer;
-          display: inline-block;
-          font-size: 1rem;
-          text-transform: uppercase;
-          position: relative;
-          transition: all 0.4s ease-in-out;
-          @media screen and (max-width: 502px) {
-            font-size: 0.9rem;
-          }
-          &::after {
-            content: "";
-            position: absolute;
-            width: 0;
-            height: 0.2rem;
-            transition: all 0.4s ease-in-out;
-            left: 0;
-            bottom: 0;
-            opacity: 0.7;
-          }
-          &:hover::after {
-            width: 100%;
-            background-color: var(--white-color);
-          }
-        }
-      }
+  .contact-title {
+    h4 {
+      color: var(--white-color);
+      padding: 0 0 1rem 0;
     }
   }
 
-    &::before{
-    content: '';
+  .form {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+  }
+
+  .form .full {
+    grid-column: 1 / 3;
+  }
+  .form .form-field {
+    /* margin-bottom: 2rem; */
+    position: relative;
+    width: 100%;
+  }
+  .form .form-field label {
+    /* position: absolute;
+      left: 20px;
+      top: -19px; */
+    display: inline-block;
+    background: transparent;
+    padding: 0 0.5rem;
+    color: inherit;
+  }
+
+  .form .form-field input {
+    border: 1px solid var(--primary-color);
+    outline: none;
+    background: transparent;
+    height: 50px;
+    padding: 0 15px;
+    width: 100%;
+    color: inherit;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  }
+
+  .form .form-field textarea {
+    background-color: transparent;
+    border: 1px solid var(--primary-color);
+    outline: none;
+    color: inherit;
+    width: 100%;
+    padding: 0.8rem 1rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  }
+
+  .form .form-field .send-mail {
+    height: 15px;
+    line-height: 15px;
+    background-color: var(--background-light-color-2);
+    padding: 0.8rem 2.5rem 1.5rem 2.5rem;
+    color: var(--white-color);
+    cursor: pointer;
+    display: inline-block;
+    font-size: 1rem;
+    text-transform: uppercase;
+    position: relative;
+    transition: all 0.4s ease-in-out;
+    &::after {
+      content: "";
+      position: absolute;
+      width: 0;
+      height: 0.2rem;
+      transition: all 0.4s ease-in-out;
+      left: 0;
+      bottom: 0;
+      opacity: 0.7;
+    }
+    &:hover::after {
+      width: 100%;
+      background-color: var(--white-color);
+    }
+  }
+
+  &::before {
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
@@ -279,9 +264,9 @@ const ContactPageStyled = styled.section`
     /* background: linear-gradient(#f00, #f0f); */
     background: linear-gradient(#2196f3, #e91e63);
     clip-path: circle(20% at right 40%);
-    }
+  }
 
-    /* &::after{
+  /* &::after{
         content: '';
         position: absolute;
         top: 0;
@@ -293,15 +278,27 @@ const ContactPageStyled = styled.section`
     
 } */
 
-.contact-section{
-    margin-top:5rem;
+  .contact-section {
+    margin-top: 4vh;
     box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
-	border-radius: 15px;
+    border-radius: 15px;
     background: rgba(255, 255, 255, 0.1);
     border-top: 1px solid rgba(255, 255, 255, 0.5);
-	border-left: 1px solid rgba(255, 255, 255, 0.5);
-	backdrop-filter: blur(5px);
-}
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(5px);
+  }
+
+  @media screen and (max-width: 502px) {
+    .form {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      margin: 0;
+    }
+    .form .form-field .send-mail {
+      font-size: 0.9rem;
+    }
+  }
 `;
 
 export default ContactPage;
