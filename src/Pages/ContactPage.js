@@ -86,56 +86,57 @@ function ContactPage() {
       <Title title={"Contact"} span={"Contact"} />
       <ContactPageStyled>
         <InnerLayout className={"contact-section"}>
-          <div className="contact-title">{/* <h4>Get In Touch</h4> */}</div>
-          <form className="form" onSubmit={sendEmail}>
-            <div className="form-field">
-              <label htmlFor="name">Enter your name*</label>
-              <input type="text" id="name" name="name" />
-            </div>
-            <div className="form-field">
-              <label htmlFor="phoneNumber">Enter your phone number*</label>
-              <input type="text" id="phoneNumbername" name="phoneNumber" />
-            </div>
-            <div className="form-field">
-              <label htmlFor="email">Enter your email*</label>
-              <input type="email" id="email" name="email" />
-            </div>
+          <div className="glasscard">
+            <form className="form" onSubmit={sendEmail}>
+              <div className="form-field">
+                <label htmlFor="name">Enter your name*</label>
+                <input type="text" id="name" name="name" />
+              </div>
+              <div className="form-field">
+                <label htmlFor="phoneNumber">Enter your phone number*</label>
+                <input type="text" id="phoneNumbername" name="phoneNumber" />
+              </div>
+              <div className="form-field">
+                <label htmlFor="email">Enter your email*</label>
+                <input type="email" id="email" name="email" />
+              </div>
 
-            <div className="form-field">
-              <label htmlFor="subject">Enter your subject</label>
-              <input type="text" id="subject" name="subject" />
-            </div>
-            <div className="form-field full">
-              <label htmlFor="text-area">Enter your Message*</label>
-              <textarea
-                name="message"
-                id="textarea"
-                cols="30"
-                rows="6"
-              ></textarea>
-            </div>
-            <div className="form-field f-button full">
-              {/* <PrimaryButton title={"Send Email"} /> */}
-              <input
-                type="submit"
-                className="send-mail"
-                value="Send Message"
-                onClick={togglePopup}
+              <div className="form-field">
+                <label htmlFor="subject">Enter your subject</label>
+                <input type="text" id="subject" name="subject" />
+              </div>
+              <div className="form-field full">
+                <label htmlFor="text-area">Enter your Message*</label>
+                <textarea
+                  name="message"
+                  id="textarea"
+                  cols="30"
+                  rows="6"
+                ></textarea>
+              </div>
+              <div className="form-field f-button full">
+                {/* <PrimaryButton title={"Send Email"} /> */}
+                <input
+                  type="submit"
+                  className="send-mail"
+                  value="Send Message"
+                  onClick={togglePopup}
+                />
+              </div>
+            </form>
+
+            {isOpen && (
+              <Popup
+                className="popup-button"
+                content={
+                  <>
+                    <b>Message Sent !</b>
+                  </>
+                }
+                handleClose={togglePopup}
               />
-            </div>
-          </form>
-
-          {isOpen && (
-            <Popup
-              className="popup-button"
-              content={
-                <>
-                  <b>Message Sent !</b>
-                </>
-              }
-              handleClose={togglePopup}
-            />
-          )}
+            )}
+          </div>
         </InnerLayout>
       </ContactPageStyled>
     </MainLayout>
@@ -149,8 +150,8 @@ const ContactPageStyled = styled.section`
   /* display: flex; */
   justify-content: center;
   align-items: center;
-  .contact-section {
-      margin:  0 12rem;
+  .glasscard {
+      margin:  0 8rem;
   }
   .popup-button {
     outline: none;
@@ -202,15 +203,15 @@ const ContactPageStyled = styled.section`
             grid-column: 1 / 3;
         }
       .form-field {
-        margin-bottom: 2rem;
+        /* margin-bottom: 2rem; */
         position: relative;
         width: 100%;
         label {
-          position: absolute;
+          /* position: absolute;
           left: 20px;
-          top: -19px;
+          top: -19px; */
           display: inline-block;
-          background-color: var(--background-dark-color);
+          background: transparent;
           padding: 0 0.5rem;
           color: inherit;
         }
@@ -223,6 +224,7 @@ const ContactPageStyled = styled.section`
           padding: 0 15px;
           width: 100%;
           color: inherit;
+          box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
         }
         textarea {
           background-color: transparent;
@@ -231,6 +233,7 @@ const ContactPageStyled = styled.section`
           color: inherit;
           width: 100%;
           padding: 0.8rem 1rem;
+          box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
         }
         .send-mail {
           height: 15px;
@@ -265,6 +268,40 @@ const ContactPageStyled = styled.section`
       }
     }
   }
+
+    &::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background: linear-gradient(#f00, #f0f); */
+    background: linear-gradient(#2196f3, #e91e63);
+    clip-path: circle(20% at right 40%);
+    }
+
+    /* &::after{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(#2196f3, #e91e63);
+        clip-path: circle(20% at 10% 10%);
+    
+} */
+
+.contact-section{
+    margin-top:5rem;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+	border-radius: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+	border-left: 1px solid rgba(255, 255, 255, 0.5);
+	backdrop-filter: blur(5px);
+}
 `;
 
 export default ContactPage;

@@ -12,13 +12,30 @@ function AboutPage() {
       <AboutStyled>
         <Title title={"About Me"} span={"About Me"} />
         <ImageSection />
-        <ServicesSection />
-        {/* <ReviewsSection /> */}
+        <div className="strengths">
+          <ServicesSection />
+          {/* <ReviewsSection /> */}
+        </div>
       </AboutStyled>
     </MainLayout>
   );
 }
 
-const AboutStyled = styled.section``;
+const AboutStyled = styled.section`
+  .strengths {
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      /* background: linear-gradient(#f00, #f0f); */
+      background: linear-gradient(#2196f3, #e91e63);
+      clip-path: circle(12% at right 40%);
+      z-index: -1;
+    }
+  }
+`;
 
 export default AboutPage;

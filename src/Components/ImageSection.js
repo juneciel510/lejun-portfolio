@@ -53,6 +53,9 @@ const ImageSectionStyled = styled.div`
     img {
       height: 100%;
       object-fit: cover;
+      box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+      border-top: 1px solid rgba(255, 255, 255, 0.5);
+      border-left: 1px solid rgba(255, 255, 255, 0.5);
     }
   }
   @media screen and (max-width: 1000px) {
