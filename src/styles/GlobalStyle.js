@@ -49,7 +49,7 @@ const GlobalStyle = createGlobalStyle`
     --background-dark-color: #303841;
     --background-dark-grey: #191D2B;
     --border-color: #2e344e;
-    --background-light-color: #F1F1F1;
+    --background-light-color: rgba(122, 165, 210,0.2);
     --background-light-color-2: #7AA5D2;
     --white-color: #FFF;
     --font-light-color: #a4acc4;
@@ -215,6 +215,15 @@ h6{
     padding-bottom: .6rem;
     @media screen and (max-width: 502px){
         font-size: 1.1rem;
+        
+    }
+}
+
+h7{
+    color: var(--white-color);
+    font-size: 1rem;
+    @media screen and (max-width: 502px){
+        font-size: 1rem;
         
     }
 }

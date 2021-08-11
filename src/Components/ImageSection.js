@@ -89,7 +89,7 @@ const ImageSectionStyled = styled.div`
     }
     .about-info {
       display: flex;
-      padding-bottom: 1.8rem;
+      padding-bottom: 1vh;
       .info-title {
         padding-right: 3rem;
         p {

@@ -2,6 +2,9 @@ import styled from "styled-components";
 import "react-super-responsive-table/dist/SuperResponsiveTableStyle.css";
 
 export const ResponsiveTable = styled.div`
+  .tdBefore {
+    color: var(--white-color);
+  }
   a {
     /* text-decoration: none; */
     &:hover {
@@ -29,7 +32,7 @@ export const ResponsiveTable = styled.div`
   }
 
   .responsiveTable tbody tr:nth-child(odd) {
-    background: var(--background-light-color-2);
+    background: var(--background-light-color);
   }
   @media screen and (max-width: 502px) {
     .responsiveTable td .tdBefore {

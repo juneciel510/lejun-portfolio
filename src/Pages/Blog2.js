@@ -9,7 +9,7 @@ const Blog2 = () => {
   return (
     <MainLayout>
       <BlogTitle>
-        <h2 className="title">Some useful packages for React JS</h2>
+        <h5 className="title">Some useful packages for React JS</h5>
       </BlogTitle>
       <ResponsiveTable>
         <Table>

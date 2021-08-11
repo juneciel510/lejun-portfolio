@@ -11,7 +11,7 @@ function Blog1() {
   return (
     <MainLayout>
       <BlogTitle>
-        <h2 className="title">What You Need To Know About CSS Styling</h2>
+        <h5 className="title">What You Need To Know About CSS Styling</h5>
       </BlogTitle>
       <ResponsiveTable>
         <Table>

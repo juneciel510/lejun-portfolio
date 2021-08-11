@@ -5,7 +5,7 @@ const Blog3 = () => {
   return (
     <MainLayout>
       <BlogsStyled>
-        <h2 className="title">Learning List</h2>
+        <h5 className="title">To Learn List</h5>
         <ul>
           <li>Figma</li>
           <li>Tailwind CSS</li>

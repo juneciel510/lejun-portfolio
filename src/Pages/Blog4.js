@@ -9,7 +9,7 @@ const Blog4 = () => {
   return (
     <MainLayout>
       <BlogTitle>
-        <h2 className="title">Good tutorials</h2>
+        <h5 className="title">Good tutorials</h5>
       </BlogTitle>
       <ResponsiveTable>
         <Table>
