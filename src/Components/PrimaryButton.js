@@ -1,21 +1,29 @@
 import React from "react";
 import styled from "styled-components";
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 function PrimaryButton({ title }) {
-  return <PrimaryButtonStyled>{title}</PrimaryButtonStyled>;
+  return (
+    <PrimaryButtonStyled>
+      <Link to="/resumePDF">{title}</Link>
+    </PrimaryButtonStyled>
+  );
 }
 
 const PrimaryButtonStyled = styled.a`
-  background-color: var(--primary-color);
-  padding: 0.8rem 2.5rem;
-  color: white;
+  background-color: var(--background-light-color-2);
+  padding: 0.5rem 2rem;
+  color: var(--primary-color);
   cursor: pointer;
   display: inline-block;
   font-size: inherit;
   text-transform: uppercase;
   position: relative;
   transition: all 0.4s ease-in-out;
-  &::after {
+  a {
+    text-decoration: none;
+  }
+  /* &::after {
     content: "";
     position: absolute;
     width: 0;
@@ -28,6 +36,12 @@ const PrimaryButtonStyled = styled.a`
   &:hover::after {
     width: 100%;
     background-color: var(--white-color);
+  } */
+  &:hover {
+    box-shadow: 2px 0px 4px var(--primary-color),
+      -2px 0px 4px var(--primary-color), 0px -2px 4px var(--primary-color),
+      0px 2px 4px var(--primary-color);
+    color: var(--primary-color);
   }
 `;
 export default PrimaryButton;

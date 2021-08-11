@@ -40,7 +40,7 @@ function ImageSection() {
             {/* <p>: Freelance</p> */}
           </div>
         </div>
-        {/* <PrimaryButton title={"Download Cv"} /> */}
+        <PrimaryButton title={"Download CV"} />
       </div>
     </ImageSectionStyled>
   );
@@ -51,7 +51,7 @@ const ImageSectionStyled = styled.div`
   display: flex;
   .left-content {
     img {
-      height: 91%;
+      height: 100%;
       object-fit: cover;
     }
   }

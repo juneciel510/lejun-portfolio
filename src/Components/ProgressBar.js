@@ -33,7 +33,7 @@ const ProgressBarStyled = styled.div`
       width: 100%;
       height: 0.4rem;
       top: -20%;
-      background-color: var(--border-color);
+      background-color: var(--background-light-color-2);
       span {
         position: absolute;
         left: 0;

@@ -40,6 +40,8 @@ const GlobalStyle = createGlobalStyle`
     --scrollbar-track-color: #383838;
     --weather:#fc7f03;
 }
+
+/* https://colorhunt.co/palette/30384147555e7aa5d2eeeeee */
 .dark-theme{
     --primary-color: #EEEEEE;
     --primary-color-light: #FFF;

@@ -5,6 +5,7 @@ import styled from "styled-components";
 import HomePage from "./Pages/HomePage";
 import AboutPage from "./Pages/AboutPage";
 import ResumePage from "./Pages/ResumePage";
+import ResumePDF from "./Pages/ResumePDF";
 import PortfoliosPage from "./Pages/PortfoliosPage";
 import BlogsPage from "./Pages/BlogsPage";
 import ContactPage from "./Pages/ContactPage";
@@ -90,6 +91,9 @@ function App() {
           <Route path="/resume" exact>
             <ResumePage />
           </Route>
+          <Route path="/resumePDF" exact>
+            <ResumePDF />
+          </Route>
           <Route path="/weather" exact>
             <WeatherPage />
           </Route>
@@ -143,6 +147,7 @@ function App() {
 const MainContentStyled = styled.main`
   position: relative;
   margin-left: 16.3rem;
+  margin-left: 15%;
   min-height: 100vh;
   @media screen and (max-width: 1200px) {
     margin-left: 0;

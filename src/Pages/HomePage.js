@@ -8,9 +8,9 @@ import Particle from "../Components/Particle";
 function HomePage() {
   return (
     <HomePageStyled>
-      <div className="particle-con">
+      {/* <div className="particle-con">
         <Particle />
-      </div>
+      </div> */}
       <div className="typography">
         <h1>
           Hi, I'm <span>Lejun Chen</span>

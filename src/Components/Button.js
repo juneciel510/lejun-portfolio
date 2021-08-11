@@ -19,18 +19,21 @@ const ButtonStyled = styled.button`
   outline: none;
   border: none;
   background-color: var(--background-light-color-2);
-  padding: 0.4rem 2rem;
+  padding: 0.2rem 0.7rem;
   font-size: inherit;
   color: var(--white-color);
   cursor: pointer;
   transition: all 0.4s ease-in-out;
-  margin-bottom: 2.3rem;
+  margin-bottom: 2rem;
   &:active,
   &:focus {
     background-color: var(--primary-color);
   }
   &:hover {
-    background-color: var(--primary-color);
+    /* background-color: var(--primary-color); */
+    box-shadow: 2px 0px 4px var(--primary-color),
+      -2px 0px 4px var(--primary-color), 0px -2px 4px var(--primary-color),
+      0px 2px 4px var(--primary-color);
   }
 
   &:not(:last-child) {

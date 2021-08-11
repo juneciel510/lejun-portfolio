@@ -86,45 +86,57 @@ function ContactPage() {
       <Title title={"Contact"} span={"Contact"} />
       <ContactPageStyled>
         <InnerLayout className={"contact-section"}>
-          <div className="contact-title">{/* <h4>Get In Touch</h4> */}</div>
-          <form className="form" onSubmit={sendEmail}>
-            <div className="form-field">
-              <label htmlFor="name">Enter your name*</label>
-              <input type="text" id="name" name="name" />
-            </div>
-            <div className="form-field">
-              <label htmlFor="phoneNumber">Enter your phone number*</label>
-              <input type="text" id="phoneNumbername" name="phoneNumber" />
-            </div>
-            <div className="form-field">
-              <label htmlFor="email">Enter your email*</label>
-              <input type="email" id="email" name="email" />
-            </div>
+          <div className="left-content">
+            <div className="contact-title">{/* <h4>Get In Touch</h4> */}</div>
+            <form className="form" onSubmit={sendEmail}>
+              <div className="form-field">
+                <label htmlFor="name">Enter your name*</label>
+                <input type="text" id="name" name="name" />
+              </div>
+              <div className="form-field">
+                <label htmlFor="email">Enter your email*</label>
+                <input type="email" id="email" name="email" />
+              </div>
+              <div className="form-field">
+                <label htmlFor="subject">Enter your subject</label>
+                <input type="text" id="subject" name="subject" />
+              </div>
+              <div className="form-field">
+                <label htmlFor="text-area">Enter your Message*</label>
+                <textarea
+                  name="message"
+                  id="textarea"
+                  cols="30"
+                  rows="6"
+                ></textarea>
+              </div>
+              <div className="form-field f-button">
+                {/* <PrimaryButton title={"Send Email"} /> */}
+                <input
+                  type="submit"
+                  className="send-mail"
+                  value="Send Message"
+                  onClick={togglePopup}
+                />
+              </div>
+            </form>
+          </div>
 
-            <div className="form-field">
-              <label htmlFor="subject">Enter your subject</label>
-              <input type="text" id="subject" name="subject" />
-            </div>
-            <div className="form-field full">
-              <label htmlFor="text-area">Enter your Message*</label>
-              <textarea
-                name="message"
-                id="textarea"
-                cols="30"
-                rows="6"
-              ></textarea>
-            </div>
-            <div className="form-field f-button full">
-              {/* <PrimaryButton title={"Send Email"} /> */}
-              <input
-                type="submit"
-                className="send-mail"
-                value="Send Message"
-                onClick={togglePopup}
-              />
-            </div>
-          </form>
-
+          <div className="right-content">
+            {/* <ContactItem title={'Phone'} icon={phone} cont1={'+66-789675637'} cont2={'07663520283'} /> */}
+            <ContactItem
+              title={"Email"}
+              icon={email}
+              cont1={"chenlejun@gmail.com"}
+              // cont2={""}
+            />
+            <ContactItem
+              title={"Address"}
+              icon={location}
+              cont1={"Stavanger, Norway"}
+              // cont2={""}
+            />
+          </div>
           {isOpen && (
             <Popup
               className="popup-button"
@@ -144,14 +156,6 @@ function ContactPage() {
 
 const ContactPageStyled = styled.section`
   /* margin-right: 1rem; */
-  
-  /* height: 100vh; */
-  /* display: flex; */
-  justify-content: center;
-  align-items: center;
-  .contact-section {
-      margin:  0 12rem;
-  }
   .popup-button {
     outline: none;
     border: none;
@@ -170,7 +174,7 @@ const ContactPageStyled = styled.section`
       background-color: var(--primary-color);
     }
   }
-  /* .contact-section {
+  .contact-section {
     display: grid;
     grid-template-columns: 2fr 1.5fr;
     grid-column-gap: 2rem;
@@ -182,8 +186,18 @@ const ContactPageStyled = styled.section`
     }
     @media screen and (max-width: 502px) {
       display: initial;
-    } */
-
+    }
+    .right-content {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      height: 60%;
+      align-items: center;
+      position: relative;
+      top: 4%;
+    }
+    @media screen and (max-width: 502px) {
+      display: block;
+    }
     .contact-title {
       h4 {
         color: var(--white-color);
@@ -192,15 +206,9 @@ const ContactPageStyled = styled.section`
     }
     .form {
       width: 100%;
-      display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap:20px;
       @media screen and (max-width: 502px) {
         width: 100%;
       }
-      .full{
-            grid-column: 1 / 3;
-        }
       .form-field {
         margin-bottom: 2rem;
         position: relative;
@@ -214,9 +222,8 @@ const ContactPageStyled = styled.section`
           padding: 0 0.5rem;
           color: inherit;
         }
-
         input {
-          border: 1px solid var(--primary-color);
+          border: 1px solid var(--border-color);
           outline: none;
           background: transparent;
           height: 50px;
@@ -226,7 +233,7 @@ const ContactPageStyled = styled.section`
         }
         textarea {
           background-color: transparent;
-          border: 1px solid var(--primary-color);
+          border: 1px solid var(--border-color);
           outline: none;
           color: inherit;
           width: 100%;

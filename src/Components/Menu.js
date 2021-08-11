@@ -26,10 +26,12 @@ function Menu({ menuItem }) {
                                         </a>
                                     </li>
                                 </ul> */}
+                  <div className="content">
+                    <p className="title">{item.title}</p>
+                    <p>{item.text}</p>
+                  </div>
                 </div>
-                <h6>{item.title}</h6>
               </Link>
-              <p>{item.text}</p>
             </div>
           </div>
         );
@@ -61,26 +63,53 @@ const MenuItemStyled = styled.div`
         text-decoration: none;
       }
       h6 {
-        margin-top: 1rem;
-        font-size: 1.1rem;
-        @media screen and (max-width: 502px) {
+        margin-bottom: 0;
+        /* @media screen and (max-width: 502px) {
           font-size: 1rem;
-        }
+        } */
         transition: all 0.4s ease-in-out;
-        &:hover {
+        /* &:hover {
           color: var(--primary-color);
-        }
+        } */
       }
-      p {
-        margin-top: -0.6rem;
-        font-size: 0.98rem;
-      }
+
       img {
         width: 100%;
         /* height: 40vh; */
-        height: 95%;
+        height: 100%;
         object-fit: cover;
         transition: all 0.4s ease-in-out;
+      }
+      .content {
+        /* transform: translateY(-600px); */
+        width: 100%;
+        height: 100%;
+        transition: all 0.4s ease-in-out;
+        position: absolute;
+        left: 0%;
+        top: 15%;
+        opacity: 0;
+        padding: 0.5rem 0.5rem;
+        font-size: 0.9rem;
+        margin: auto 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: left;
+      }
+      h6,
+      p {
+        font-size: 0.8rem;
+        text-align: left;
+        padding-bottom: 0;
+        /* margin: auto 0; */
+        width: 100%;
+        /* align-items: center; */
+        color: var(--sidebar-dark-color);
+      }
+      .title {
+        font-weight: 900;
+        color: var(--background-dark-color);
       }
       /* ul{
                 transform: translateY(-600px);
@@ -117,8 +146,7 @@ const MenuItemStyled = styled.div`
         &::before {
           content: "";
           position: absolute;
-          left: 2%;
-          top: 4%;
+
           height: 0;
           width: 0;
           transition: all 0.4s ease-in-out;
@@ -126,8 +154,17 @@ const MenuItemStyled = styled.div`
       }
       .portfolio-image:hover {
         cursor: pointer;
-        transform: scale(1.1, 1.1);
         transition: all 0.4s ease-in-out;
+        .content {
+          transform: translateY(0);
+          /* transform: translate(-50%, -50%); */
+          /* display: flex; */
+          /* align-items: center;
+          justify-content: center; */
+          transition: all 0.4s ease-in-out;
+          opacity: 1;
+          color: ;
+        }
         /* ul {
           transform: translateY(0);
           transform: translate(-50%, -50%);
@@ -158,15 +195,15 @@ const MenuItemStyled = styled.div`
             font-size: 2rem;
           }
         } */
-        /* &::before {
-          height: calc(100% - 32%);
-          width: calc(100% - 4%);
+        &::before {
+          height: 100%;
+          width: 100%;
           background-color: white;
           opacity: 0.9;
           transform-origin: left;
 
           transition: all 0.4s ease-in-out;
-        } */
+        }
       }
     }
   }
