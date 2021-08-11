@@ -49,7 +49,7 @@ const GlobalStyle = createGlobalStyle`
     --background-dark-color: #303841;
     --background-dark-grey: #191D2B;
     --border-color: #2e344e;
-    --background-light-color: rgba(122, 165, 210,0.2);
+    --background-light-color: rgba(122, 165, 210,0.3);
     --background-light-color-2: #7AA5D2;
     --white-color: #FFF;
     --font-light-color: #a4acc4;
@@ -70,7 +70,7 @@ const GlobalStyle = createGlobalStyle`
     text-decoration: none;
     font-family: 'Nunito', sans-serif;
     font-size: 1.1rem;
-    @media screen and (max-width: 502px) {
+    @media screen and (max-width: 540px) {
     font-size: 1rem;
 
     
@@ -110,7 +110,7 @@ p{
     font-size: 1.1rem;
     padding-bottom: .6rem;
     margin-bottom:0;
-    @media screen and (max-width: 502px){
+    @media screen and (max-width: 540px){
         font-size: 1.0rem;
         margin-bottom: 0rem;
         margin-block-end: 0;
@@ -126,11 +126,11 @@ h1{
     color: var(--white-color);
     span{
         font-size: 4rem;
-        @media screen and (max-width: 502px){
+        @media screen and (max-width: 540px){
             font-size: 1.8rem
         }
     }
-    @media screen and (max-width: 502px){
+    @media screen and (max-width: 540px){
         font-size: 1.8rem
     }
 }
@@ -141,12 +141,12 @@ h2{
     
     span{
         font-size: 2.7rem;
-        @media screen and (max-width: 502px){
+        @media screen and (max-width: 540px){
             font-size: 1.6rem;
             padding-bottom: 0;
         }
     }
-    @media screen and (max-width: 502px){
+    @media screen and (max-width: 540px){
         font-size: 1.6rem;
         
     }
@@ -159,12 +159,12 @@ h3{
     span{
         font-size: 2.5rem;
         color: var(--primary-color);
-        @media screen and (max-width: 502px){
+        @media screen and (max-width: 540px){
             font-size: 1.4rem;
             padding-bottom: 0;
         }
     }
-    @media screen and (max-width: 502px){
+    @media screen and (max-width: 540px){
         font-size: 1.4rem;
         
     }
@@ -177,12 +177,12 @@ h4{
     span{
         font-size: 1.8rem;
         color: var(--primary-color);
-        @media screen and (max-width: 502px){
+        @media screen and (max-width: 540px){
             font-size: 1.3rem;
             padding-bottom: 0;
         }
     }
-    @media screen and (max-width: 502px){
+    @media screen and (max-width: 540px){
         font-size: 1.3rem;
         
     }
@@ -194,13 +194,13 @@ h5{
     span{
         font-size: 1.3rem;
         color: var(--primary-color);
-        @media screen and (max-width: 502px){
+        @media screen and (max-width: 540px){
             font-size: 1.2rem;
             padding-bottom: 0;
         }
     } 
     
-    @media screen and (max-width: 502px){
+    @media screen and (max-width: 540px){
         font-size: 1.2rem;
         
     }
@@ -213,7 +213,7 @@ h6{
     color: var(--white-color);
     font-size: 1.2rem;
     padding-bottom: .6rem;
-    @media screen and (max-width: 502px){
+    @media screen and (max-width: 540px){
         font-size: 1.1rem;
         
     }
@@ -222,7 +222,7 @@ h6{
 h7{
     color: var(--white-color);
     font-size: 1rem;
-    @media screen and (max-width: 502px){
+    @media screen and (max-width: 540px){
         font-size: 1rem;
         
     }
@@ -254,18 +254,31 @@ h7{
     }
   }
 
+  .top-bar{
+      width: 100%;
+      height:50px;
+      background-color:var(--sidebar-dark-color);
+      top: 0;
+      position: fixed;
+      z-index: 14;
+      display:none;
+  }
   //Nav Toggler
   .ham-burger-menu{
       /* position: absolute; */
       position: fixed;
       right: 5%;
-      top: 3%; 
+      /* top: 3%;  */
       display: none;
       z-index: 15;
       svg{
-          font-size: 3rem;
+          font-size: 50px;
           color: var(--primary-color-light);
       }
+     .MuiIconButton-root{
+         padding:0;
+         
+     } 
     }
 
     .nav-toggle{
@@ -275,6 +288,10 @@ h7{
   @media screen and (max-width:1200px){
     .ham-burger-menu{
         display: block;
+    }
+    .top-bar{
+        display: block;
+
     }
   }
 

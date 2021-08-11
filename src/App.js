@@ -66,11 +66,12 @@ function App() {
           </div>
         </div>
       </div> */}
-
-      <div className="ham-burger-menu">
-        <IconButton onClick={() => setNavToggle(!navToggle)}>
-          <MenuIcon />
-        </IconButton>
+      <div className="top-bar">
+        <div className="ham-burger-menu">
+          <IconButton onClick={() => setNavToggle(!navToggle)}>
+            <MenuIcon />
+          </IconButton>
+        </div>
       </div>
 
       <MainContentStyled>
@@ -147,7 +148,7 @@ function App() {
 const MainContentStyled = styled.main`
   position: relative;
   margin-left: 16.3rem;
-  margin-left: 15%;
+  margin-left: 12%;
   min-height: 100vh;
   @media screen and (max-width: 1200px) {
     margin-left: 0;

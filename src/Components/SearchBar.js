@@ -76,13 +76,27 @@ const SearchBarStyled = styled.div`
   }
   input {
     /* border: 1px solid var(--background-light-color-2); */
-    background-color: var(--background-light-color-2);
+    background-color: var(--background-light-color);
     /* background: transparent; */
     /* background-color: var(--background-dark-color); */
     border: 1px solid var(--white-color);
     color: var(--white-color);
     width: 47%;
     padding: 0.1rem 0.3;
+
+    ::-webkit-input-placeholder {
+      /* Edge */
+      color: #999b84;
+    }
+
+    :-ms-input-placeholder {
+      /* Internet Explorer 10-11 */
+      color: #999b84;
+    }
+
+    ::placeholder {
+      color: #999b84;
+    }
   }
   .input {
   }
