@@ -23,13 +23,12 @@ function ImageSection() {
           a new career as a developer with the passion of coding.
         </p>
         <div className="about-info item">
-          <div className="info-title">
+          {/* <div className="info-title">
             <p>Full Name</p>
             <p>Gender</p>
             <p>Age</p>
             <p>Languages </p>
             <p>Location</p>
-            {/* <p>Service</p> */}
           </div>
           <div className="info">
             <p>: Lejun Chen</p>
@@ -37,8 +36,29 @@ function ImageSection() {
             <p>: 40</p>
             <p>: Mandarin, English, Norwegian </p>
             <p>: Stavanger, Norway</p>
-            {/* <p>: Freelance</p> */}
-          </div>
+          </div> */}
+          <table class="a">
+            <tr>
+              <th scope="row">Name</th>
+              <td>Lejun Chen</td>
+            </tr>
+            <tr>
+              <th scope="row">Gender</th>
+              <td>Female</td>
+            </tr>
+            <tr>
+              <th scope="row">Languages</th>
+              <td>Mandarin, English, Norwegian</td>
+            </tr>
+            <tr>
+              <th scope="row">Skills</th>
+              <td>Javascript, React, Go, Python, R</td>
+            </tr>
+            <tr>
+              <th scope="row">Location</th>
+              <td>Stavanger</td>
+            </tr>
+          </table>
         </div>
         <PrimaryButton className="item" title={"Download CV"} />
       </div>
@@ -104,6 +124,21 @@ const ImageSectionStyled = styled.div`
       }
       .info-title,
       .info {
+      }
+    }
+
+    table.a {
+      table-layout: auto;
+      width: 100%;
+      vertical-align: top;
+      th {
+        /* background: lightblue; */
+        vertical-align: top;
+        color: var(--white-color);
+      }
+      td {
+        padding-left: 20px;
+        color: var(--font-light-color);
       }
     }
   }
