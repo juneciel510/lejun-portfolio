@@ -26,9 +26,11 @@ function Menu({ menuItem }) {
                                         </a>
                                     </li>
                                 </ul> */}
-                  <div className="content">
-                    <p className="title">{item.title}</p>
-                    <p>{item.text}</p>
+                  <div className="container">
+                    <div className="content">
+                      <h6 className="title">{item.title}</h6>
+                      <p>{item.text}</p>
+                    </div>
                   </div>
                 </div>
               </Link>
@@ -59,20 +61,7 @@ const MenuItemStyled = styled.div`
       display: block;
       position: relative;
       overflow: hidden;
-      a {
-        text-decoration: none;
-      }
-      h6 {
-        margin-bottom: 0;
-        /* @media screen and (max-width: 502px) {
-          font-size: 1rem;
-        } */
-        transition: all 0.4s ease-in-out;
-        /* &:hover {
-          color: var(--primary-color);
-        } */
-      }
-
+      border-radius: 7px;
       img {
         width: 100%;
         /* height: 40vh; */
@@ -80,36 +69,47 @@ const MenuItemStyled = styled.div`
         object-fit: cover;
         transition: all 0.4s ease-in-out;
       }
-      .content {
-        /* transform: translateY(-600px); */
+      .container {
         width: 100%;
         height: 100%;
-        transition: all 0.4s ease-in-out;
         position: absolute;
         left: 0%;
-        top: 15%;
-        opacity: 0;
-        padding: 0.5rem 0.5rem;
-        font-size: 0.9rem;
-        margin: auto 0;
+        top: 0%;
         display: flex;
         flex-direction: column;
         align-items: center;
-        text-align: left;
+        margin: auto 0;
+      }
+      .content {
+        /* transform: translateY(-600px); */
+        width: 100%;
+        transition: all 0.5s ease-in-out;
+        opacity: 1;
+        /* padding: 0.5rem 0.5rem; */
+        /* margin: auto 0; */
+        text-align: justify;
+        transform: translateY(85%);
+        height: 100%;
+      }
+      a {
+        text-decoration: none;
       }
       h6,
       p {
-        font-size: 0.8rem;
+        font-size: 0.9rem;
         text-align: left;
-        padding-bottom: 0;
-        /* margin: auto 0; */
+        /* padding-bottom: 0; */
         width: 100%;
-        /* align-items: center; */
-        color: var(--sidebar-dark-color);
+        color: var(--primary-color);
+        display: block;
+        position: relative;
+        /* text-align: justify; */
       }
       .title {
-        font-weight: 900;
-        color: var(--background-dark-color);
+        padding: 0;
+        margin-top: 1%;
+        font-size: inherit;
+        /* text-align: reverted; */
       }
       /* ul{
                 transform: translateY(-600px);
@@ -146,10 +146,15 @@ const MenuItemStyled = styled.div`
         &::before {
           content: "";
           position: absolute;
-
-          height: 0;
-          width: 0;
-          transition: all 0.4s ease-in-out;
+          top: 0;
+          height: 100%;
+          width: 100%;
+          background-color: var(--background-dark-color);
+          opacity: 0.8;
+          height: 100%;
+          width: 100%;
+          transform: translateY(85%);
+          transition: 0.5s;
         }
       }
       .portfolio-image:hover {
@@ -163,7 +168,12 @@ const MenuItemStyled = styled.div`
           justify-content: center; */
           transition: all 0.4s ease-in-out;
           opacity: 1;
-          color: ;
+        }
+        &::before {
+          height: 100%;
+          width: 100%;
+          transform: translateY(0);
+          opacity: 0.9;
         }
         /* ul {
           transform: translateY(0);
@@ -195,15 +205,6 @@ const MenuItemStyled = styled.div`
             font-size: 2rem;
           }
         } */
-        &::before {
-          height: 100%;
-          width: 100%;
-          background-color: white;
-          opacity: 0.9;
-          transform-origin: left;
-
-          transition: all 0.4s ease-in-out;
-        }
       }
     }
   }

@@ -110,6 +110,7 @@ p{
     font-size: 1.1rem;
     padding-bottom: .6rem;
     margin-bottom:0;
+    line-height: 1.3;
     @media screen and (max-width: 540px){
         font-size: 1.0rem;
         margin-bottom: 0rem;

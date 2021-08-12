@@ -14,8 +14,8 @@ const portfolios = [
     image: paxos1,
     link1: "https://www.google.com",
     link2: "https://www.google.com",
-    title: "Comparative analysis of Multi-Paxos, Raft and Compartmentalization",
-    text: "Academic Report, Distributed System.",
+    title: "Consensus Protocols",
+    text: "Academic Report, Distributed System. Comparative analysis of Multi Paxos, Raft and Compartmentalization",
     internalLink: "portfolio1",
   },
   {
@@ -24,9 +24,8 @@ const portfolios = [
     image: ML1,
     link1: "https://www.google.com",
     link2: "https://www.google.com",
-    title:
-      "Visualization for Classifiers of Maximum-likelihood, Parzen windows, KNN  ",
-    text: "Python, Machine Learning.",
+    title: "Data Visualization",
+    text: "Python, Machine Learning: Visualization for Classifiers of Maximum likelihood, Parzen windows, KNN ",
     internalLink: "portfolio2",
   },
   {
@@ -36,7 +35,7 @@ const portfolios = [
     link1: "https://www.google.com",
     link2: "https://www.google.com",
     title: "Responsive Portfolio Website",
-    text: "Created Using React JS, Styled-Components and more...",
+    text: "Created Using React JS, Styled Components and more...",
     internalLink: "portfolio3",
   },
   {
@@ -45,8 +44,8 @@ const portfolios = [
     image: bank,
     link1: "https://www.google.com",
     link2: "https://www.google.com",
-    title: "Bank Transaction System with Reconfiguration Function",
-    text: "React JS, Golang, Web Socket, Realtime communication",
+    title: "Bank Transaction System",
+    text: "React JS, Golang, Web Socket. Back end: Build a cluster of servers using go language with implementation of multi-paxos consensus algorithm and leader detector scheme. Front end: Use React Javascript to build bank transaction UI. Reconfiguration function: the number of servers could be scaled up and down by reconfiguration. ",
     internalLink: "portfolio4",
   },
   {
@@ -55,8 +54,8 @@ const portfolios = [
     image: alice,
     link1: "https://www.google.com",
     link2: "https://www.google.com",
-    title: "Implementaion of two web servers & their secure communication",
-    text: "Public Key Change, CSPRNG & Symmetric Cipher and Decipher ",
+    title: "Secure communication in the network",
+    text: "Implementaion of two web servers & their secure communication. Public Key Change, CSPRNG & Symmetric Cipher and Decipher ",
     internalLink: "portfolio5",
   },
 ];
