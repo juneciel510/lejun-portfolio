@@ -1,7 +1,9 @@
 import React from "react";
 import styled from "styled-components";
 import BackgroundClipText from "../Components/BackgroundClipText";
-
+import GitHub from "@material-ui/icons/GitHub";
+import Pinterest from "@material-ui/icons/Pinterest";
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 const ComingSoon2 = () => {
   return (
     <ComingSoon2Styled>

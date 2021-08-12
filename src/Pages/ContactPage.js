@@ -148,9 +148,24 @@ const ContactPageStyled = styled.section`
 
   /* height: 100vh; */
   /* display: flex; */
+  max-width: 1200px;
+  margin: 0 auto;
+  display: block;
   justify-content: center;
   align-items: center;
+
+  .contact-section {
+    margin-top: 8vh;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(5px);
+  }
+
   .glasscard {
+    display: block;
     /* margin: 0 8rem; */
     margin: 2vh 12vw;
   }
@@ -277,16 +292,6 @@ const ContactPageStyled = styled.section`
         clip-path: circle(20% at 10% 10%);
     
 } */
-
-  .contact-section {
-    margin-top: 4vh;
-    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
-    border-radius: 15px;
-    background: rgba(255, 255, 255, 0.1);
-    border-top: 1px solid rgba(255, 255, 255, 0.5);
-    border-left: 1px solid rgba(255, 255, 255, 0.5);
-    backdrop-filter: blur(5px);
-  }
 
   @media screen and (max-width: 502px) {
     .form {

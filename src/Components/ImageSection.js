@@ -12,17 +12,17 @@ function ImageSection() {
         <img src={resume3} alt="" />
       </div>
       <div className="right-content">
-        <h3>
+        <h3 className="item">
           I am <span>Lejun Chen</span>
         </h3>
-        <p className="paragraph">
+        <p className="paragraph item">
           Computer Science student of a two years’ master program at the
           University of Stavanger. Moved to Stavanger in 2019 with the whole
           family. Have 10+ years’ work experience as a project coordinator and
           document engineer. I enjoy the fun of coding and look forward to start
           a new career as a developer with the passion of coding.
         </p>
-        <div className="about-info">
+        <div className="about-info item">
           <div className="info-title">
             <p>Full Name</p>
             <p>Gender</p>
@@ -40,7 +40,7 @@ function ImageSection() {
             {/* <p>: Freelance</p> */}
           </div>
         </div>
-        <PrimaryButton title={"Download CV"} />
+        <PrimaryButton className="item" title={"Download CV"} />
       </div>
     </ImageSectionStyled>
   );
@@ -84,6 +84,12 @@ const ImageSectionStyled = styled.div`
         color: var(--primary-color);
       }
     } */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .item {
+      display: block;
+    }
     .paragraph {
       padding: 0.5rem 0;
     }

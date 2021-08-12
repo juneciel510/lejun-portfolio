@@ -5,14 +5,18 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 function PrimaryButton({ title }) {
   return (
     <PrimaryButtonStyled>
-      <Link to="/resumePDF">{title}</Link>
+      <Link className="download" to="/resumePDF">
+        {title}
+      </Link>
     </PrimaryButtonStyled>
   );
 }
 
 const PrimaryButtonStyled = styled.a`
+  width: 11rem;
   background-color: var(--background-light-color-2);
-  padding: 0.5rem 2rem;
+  padding: 0.5rem;
+  text-align: center;
   color: var(--primary-color);
   cursor: pointer;
   display: inline-block;
@@ -20,6 +24,7 @@ const PrimaryButtonStyled = styled.a`
   text-transform: uppercase;
   position: relative;
   transition: all 0.4s ease-in-out;
+  text-decoration: none;
   a {
     text-decoration: none;
   }
