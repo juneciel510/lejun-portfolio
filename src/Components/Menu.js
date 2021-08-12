@@ -73,7 +73,7 @@ const MenuItemStyled = styled.div`
     /* width: 370px;
     height: 220px; */
     max-width: 400px;
-    min-width: 370px;
+    min-width: 340px;
     margin: 10px;
     img {
       width: 100%;

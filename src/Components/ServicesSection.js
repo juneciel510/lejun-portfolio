@@ -16,7 +16,7 @@ function ServicesSection() {
         <div className="services">
           <ServiceCard image={book} title={"Quick learning"} />
           <div className="mid-card">
-            <ServiceCard image={intelligence} title={"Passion for coding"} />
+            <ServiceCard image={intelligence} title={"Coding enthusiast"} />
           </div>
           <ServiceCard image={collaborate} title={"Collaborate"} />
           <ServiceCard image={reliable} title={"Reliable"} />
