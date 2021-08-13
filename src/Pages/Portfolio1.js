@@ -15,24 +15,13 @@ const Portfolio1 = () => {
 };
 
 const Portfolio1Styled = styled.div`
-  width: 100vw;
-  height: 100vh;
-  .container {
-    margin: 0, 4vw;
-    overflow: hidden;
-    @media screen and (max-width: 1200px) {
-      margin: 42px 4vw;
-    }
-    @media screen and (max-width: 642px) {
-      margin: 42px 0.4rem;
-    }
+  @media screen and (max-width: 1200px) {
+    margin-top: 50px;
   }
-
   .reader-container {
-    width: 100%;
-    height: 100%;
+    /* width: 100%;
+    height: 100%; */
     overflow: hidden;
-    /* margin: 0 0 0 12px; */
   }
 `;
 

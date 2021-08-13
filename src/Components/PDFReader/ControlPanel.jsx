@@ -43,8 +43,8 @@ const ControlPanel = (props) => {
   };
 
   return (
-    <div className="control-panel m-3 p-3 d-flex align-items-baseline justify-content-between">
-      <div className="d-flex justify-content-between align-items-baseline">
+    <div className="control-panel m-3 p-3 d-flex align-items-baseline justify-content-center">
+      <div className="d-flex justify-content-center align-items-baseline">
         <i
           className={`fas fa-fast-backward mx-3 ${firstPageClass}`}
           onClick={goToFirstPage}

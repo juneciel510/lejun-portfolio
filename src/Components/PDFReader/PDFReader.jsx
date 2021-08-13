@@ -8,7 +8,7 @@ import "bootstrap/dist/css/bootstrap.css";
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 
 const PDFReader = ({ file }) => {
-  const [scale, setScale] = useState(1.2);
+  const [scale, setScale] = useState(1);
   const [numPages, setNumPages] = useState(null);
   const [pageNumber, setPageNumber] = useState(1);
   const [isLoading, setIsLoading] = useState(true);
