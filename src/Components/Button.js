@@ -29,6 +29,7 @@ const ButtonStyled = styled.button`
   &:active,
   &:focus {
     background-color: var(--primary-color);
+    color: var(--background-dark-color);
   }
   &:hover {
     /* background-color: var(--primary-color); */
