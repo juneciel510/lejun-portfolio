@@ -66,6 +66,18 @@ function ContactPage() {
   //     });
   //   }
 
+  function messageSent() {
+    document.getElementsByClassName("message-sent")[0].style.opacity = "1";
+    document.getElementsByClassName("message-sent")[0].style.display = "block";
+    setTimeout(function () {
+      // document.getElementsByClassName("message-sent")[0].style.display = "none";
+      document.getElementsByClassName("message-sent")[0].style.opacity = "0";
+      // setTimeout(() => {
+      //   document.getElementsByClassName("message-sent")[0].style.display =
+      //     "none";
+      // }, 600);
+    }, 2000);
+  }
   return (
     <MainLayout>
       {/* <Alert
@@ -85,9 +97,9 @@ function ContactPage() {
 
       <Title title={"Contact"} span={"Contact"} />
       <ContactPageStyled>
-        <InnerLayout className={"contact-section"}>
+        <InnerLayout>
           <div className="glasscard">
-            <form className="form" onSubmit={sendEmail}>
+            <form className="form" onSubmit={messageSent}>
               <div className="form-field">
                 <label htmlFor="name">Name*</label>
                 <input type="text" id="name" name="name" />
@@ -115,22 +127,23 @@ function ContactPage() {
                 ></textarea>
               </div>
               <div className="form-field f-button full">
-                {/* <PrimaryButton title={"Send Email"} /> */}
                 <input
                   type="submit"
                   className="send-mail"
                   value="Send Message"
-                  onClick={togglePopup}
+                  // onClick={togglePopup}
                 />
               </div>
             </form>
-
+            <div className="message-sent">
+              <h6>We will contact you as soon as possible !</h6>
+            </div>
             {isOpen && (
               <Popup
                 className="popup-button"
                 content={
                   <>
-                    <b>Message Sent !</b>
+                    <b>Message sent</b>
                   </>
                 }
                 handleClose={togglePopup}
@@ -154,20 +167,17 @@ const ContactPageStyled = styled.section`
   justify-content: center;
   align-items: center;
 
-  .contact-section {
-    margin-top: 8vh;
+  .glasscard {
+    /* margin-top: 8vh; */
     box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
     border-radius: 15px;
     background: rgba(255, 255, 255, 0.1);
     border-top: 1px solid rgba(255, 255, 255, 0.5);
     border-left: 1px solid rgba(255, 255, 255, 0.5);
     backdrop-filter: blur(5px);
-  }
-
-  .glasscard {
     display: block;
     /* margin: 0 8rem; */
-    margin: 2vh 12vw;
+    padding: 7vh 12vw;
   }
   .popup-button {
     outline: none;
@@ -242,10 +252,10 @@ const ContactPageStyled = styled.section`
   }
 
   .form .form-field .send-mail {
-    height: 15px;
-    line-height: 15px;
+    height: 40px;
+    line-height: 40px;
     background-color: var(--background-light-color-2);
-    padding: 0.8rem 2.5rem 1.5rem 2.5rem;
+    /* padding: 0.8rem 2.5rem 1.5rem 2.5rem; */
     color: var(--white-color);
     cursor: pointer;
     display: inline-block;
@@ -292,7 +302,21 @@ const ContactPageStyled = styled.section`
         clip-path: circle(20% at 10% 10%);
     
 } */
-
+  .message-sent {
+    transition: opacity 1s ease;
+    /* display: none; */
+    opacity: 0;
+    /* visibility: "hidden"; */
+    h6 {
+      height: 40px;
+      line-height: 40px;
+      background-color: rgba(255, 103, 103, 0.6);
+      text-align: center;
+      font-size: 1.1rem;
+      padding: 0;
+      color: var(--white-color);
+    }
+  }
   @media screen and (max-width: 502px) {
     .form {
       width: 100%;
