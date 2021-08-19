@@ -185,7 +185,7 @@ const ContactPageStyled = styled.section`
     /* margin: 0 8rem; */
     padding: 7vh 12vw;
   }
-  .popup-button {
+  /* .popup-button {
     outline: none;
     border: none;
     background-color: var(--background-light-color-2);
@@ -202,7 +202,7 @@ const ContactPageStyled = styled.section`
     &:hover {
       background-color: var(--primary-color);
     }
-  }
+  } */
 
   .contact-title {
     h4 {
@@ -260,7 +260,7 @@ const ContactPageStyled = styled.section`
   .form .form-field .send-mail {
     height: 40px;
     line-height: 40px;
-    background-color: var(--background-light-color-2);
+    background-color: var(--background-light-color);
     /* padding: 0.8rem 2.5rem 1.5rem 2.5rem; */
     color: var(--white-color);
     cursor: pointer;
@@ -268,8 +268,15 @@ const ContactPageStyled = styled.section`
     font-size: 1rem;
     text-transform: uppercase;
     position: relative;
+    &:hover {
+      /* background-color: var(--primary-color); */
+      color: var(--primary-color);
+      box-shadow: 2px 0px 4px var(--primary-color),
+        -2px 0px 4px var(--primary-color), 0px -2px 4px var(--primary-color),
+        0px 2px 4px var(--primary-color);
+    }
     /* transition: all 0.4s ease-in-out; */
-    &::after {
+    /* &::after {
       content: "";
       position: absolute;
       width: 0;
@@ -278,11 +285,14 @@ const ContactPageStyled = styled.section`
       left: 0;
       bottom: 0;
       opacity: 0.7;
-    }
-    &:hover::after {
+    } */
+    /* &:hover::after {
       width: 100%;
       background-color: var(--white-color);
-    }
+    } */
+  }
+
+  .send-mail {
   }
 
   &::before {

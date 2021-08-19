@@ -6,7 +6,7 @@ import { faSearch } from "@fortawesome/free-solid-svg-icons";
 const SearchBar = (props) => {
   return (
     <SearchBarStyled>
-      <div className="container ">
+      <div className="container-search-bar ">
         <form onSubmit={props.loadweather}>
           <div>{props.error ? error() : ""}</div>
           <div className="row">
@@ -18,13 +18,13 @@ const SearchBar = (props) => {
               autoComplete="on"
             />
 
-            <input
+            {/* <input
               type="text"
               className="country"
               placeholder="Country"
               name="country"
               autoComplete="on"
-            />
+            /> */}
 
             <button className="search-form__btn" type="submit">
               <FontAwesomeIcon icon={faSearch} />
@@ -39,7 +39,7 @@ const SearchBar = (props) => {
 const error = (props) => {
   return (
     <div className="alert alert-danger mx-5" role="alert">
-      Please Enter City and Country...
+      Please Enter City ...
     </div>
   );
 };
@@ -48,9 +48,13 @@ const SearchBarStyled = styled.div`
   width: 100%;
   margin-top: 3rem;
   color: var(--white-color);
+  form {
+    width: 100%;
+  }
   .row {
     margin: auto;
     width: 50%;
+    justify-content: center;
   }
   /* @media screen and (max-width: 1600px) {
     .row {
@@ -58,7 +62,10 @@ const SearchBarStyled = styled.div`
       width: 50%;
     }
   } */
-
+  .mx-5 {
+    margin-right: 1rem !important;
+    margin-left: 1rem !important;
+  }
   @media screen and (max-width: 920px) {
     .row {
       width: 100%;
@@ -81,12 +88,13 @@ const SearchBarStyled = styled.div`
     /* background-color: var(--background-dark-color); */
     border: 1px solid var(--white-color);
     color: var(--white-color);
-    width: 47%;
+    width: 77%;
     padding: 0.1rem 0.3;
-
+    text-align: center;
     ::-webkit-input-placeholder {
       /* Edge */
       color: #999b84;
+      text-align: center;
     }
 
     :-ms-input-placeholder {
@@ -101,13 +109,14 @@ const SearchBarStyled = styled.div`
   .input {
   }
   .city {
-    border-top-left-radius: 0.5rem;
-    border-bottom-left-radius: 0.5rem;
+    /* border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem; */
+    border-radius: 0.5rem;
   }
-  .country {
+  /* .country {
     border-top-right-radius: 0.5rem;
     border-bottom-right-radius: 0.5rem;
-  }
+  } */
 
   .search-form__btn {
     width: 6%;
