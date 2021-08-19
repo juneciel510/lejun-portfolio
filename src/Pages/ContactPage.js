@@ -77,11 +77,12 @@ function ContactPage() {
       //   document.getElementsByClassName("message-sent")[0].style.display =
       //     "none";
       // }, 600);
-    }, 1000);
+    }, 2000);
   }
   return (
-    <MainLayout>
-      {/* <Alert
+    <ContactPageStyled>
+      <MainLayout>
+        {/* <Alert
         header={"Header"}
         btnText={"Close"}
         text={alert.text}
@@ -96,64 +97,66 @@ function ContactPage() {
         buttonStyles={{}}
       /> */}
 
-      <Title title={"Contact"} span={"Contact"} />
-      <ContactPageStyled>
-        <InnerLayout>
-          <div className="glasscard">
-            <form className="form" onSubmit={messageSent}>
-              <div className="form-field">
-                <label htmlFor="name">Name*</label>
-                <input type="text" id="name" name="name" />
-              </div>
-              <div className="form-field">
-                <label htmlFor="phoneNumber">Phone number</label>
-                <input type="text" id="phoneNumbername" name="phoneNumber" />
-              </div>
-              <div className="form-field">
-                <label htmlFor="email">Email*</label>
-                <input type="email" id="email" name="email" />
-              </div>
+        <Title title={"Contact"} span={"Contact"} />
+        <div className="container">
+          <InnerLayout>
+            <div className="glasscard">
+              <form className="form" onSubmit={sendEmail}>
+                <div className="form-field">
+                  <label htmlFor="name">Name*</label>
+                  <input type="text" id="name" name="name" />
+                </div>
+                <div className="form-field">
+                  <label htmlFor="phoneNumber">Phone number</label>
+                  <input type="text" id="phoneNumbername" name="phoneNumber" />
+                </div>
+                <div className="form-field">
+                  <label htmlFor="email">Email*</label>
+                  <input type="email" id="email" name="email" />
+                </div>
 
-              <div className="form-field">
-                <label htmlFor="subject">Subject</label>
-                <input type="text" id="subject" name="subject" />
+                <div className="form-field">
+                  <label htmlFor="subject">Subject</label>
+                  <input type="text" id="subject" name="subject" />
+                </div>
+                <div className="form-field full">
+                  <label htmlFor="text-area">Message*</label>
+                  <textarea
+                    name="message"
+                    id="textarea"
+                    cols="30"
+                    rows="6"
+                  ></textarea>
+                </div>
+                <div className="form-field f-button full">
+                  <input
+                    type="submit"
+                    className="send-mail"
+                    value="Send Message"
+                    // onClick={togglePopup}
+                    onClick={messageSent}
+                  />
+                </div>
+              </form>
+              <div className="message-sent">
+                <h6>We will contact you as soon as possible !</h6>
               </div>
-              <div className="form-field full">
-                <label htmlFor="text-area">Message*</label>
-                <textarea
-                  name="message"
-                  id="textarea"
-                  cols="30"
-                  rows="6"
-                ></textarea>
-              </div>
-              <div className="form-field f-button full">
-                <input
-                  type="submit"
-                  className="send-mail"
-                  value="Send Message"
-                  // onClick={togglePopup}
+              {isOpen && (
+                <Popup
+                  className="popup-button"
+                  content={
+                    <>
+                      <b>Message sent</b>
+                    </>
+                  }
+                  handleClose={togglePopup}
                 />
-              </div>
-            </form>
-            <div className="message-sent">
-              <h6>We will contact you as soon as possible !</h6>
+              )}
             </div>
-            {isOpen && (
-              <Popup
-                className="popup-button"
-                content={
-                  <>
-                    <b>Message sent</b>
-                  </>
-                }
-                handleClose={togglePopup}
-              />
-            )}
-          </div>
-        </InnerLayout>
-      </ContactPageStyled>
-    </MainLayout>
+          </InnerLayout>
+        </div>
+      </MainLayout>
+    </ContactPageStyled>
   );
 }
 
@@ -162,11 +165,13 @@ const ContactPageStyled = styled.section`
 
   /* height: 100vh; */
   /* display: flex; */
-  max-width: 1200px;
-  margin: 0 auto;
-  display: block;
-  justify-content: center;
-  align-items: center;
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: block;
+    justify-content: center;
+    align-items: center;
+  }
 
   .glasscard {
     /* margin-top: 8vh; */
@@ -263,7 +268,7 @@ const ContactPageStyled = styled.section`
     font-size: 1rem;
     text-transform: uppercase;
     position: relative;
-    transition: all 0.4s ease-in-out;
+    /* transition: all 0.4s ease-in-out; */
     &::after {
       content: "";
       position: absolute;
