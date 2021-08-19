@@ -66,9 +66,10 @@ function ContactPage() {
   //     });
   //   }
 
+  // https://stackoverflow.com/questions/12194435/cannot-set-property-display-of-undefined
   function messageSent() {
     document.getElementsByClassName("message-sent")[0].style.opacity = "1";
-    document.getElementsByClassName("message-sent")[0].style.display = "block";
+    // document.getElementsByClassName("message-sent")[0].style.display = "block";
     setTimeout(function () {
       // document.getElementsByClassName("message-sent")[0].style.display = "none";
       document.getElementsByClassName("message-sent")[0].style.opacity = "0";
@@ -76,7 +77,7 @@ function ContactPage() {
       //   document.getElementsByClassName("message-sent")[0].style.display =
       //     "none";
       // }, 600);
-    }, 2000);
+    }, 1000);
   }
   return (
     <MainLayout>
