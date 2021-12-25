@@ -9,9 +9,6 @@ const Popup = (props) => {
           x
         </span>
         {props.content}
-        {/* <button>
-          <h6>Close</h6>
-        </button> */}
       </div>
     </PopupBoxStyled>
   );

@@ -21,7 +21,6 @@ const SmallTitleStyled = styled.div`
   }
   h3 {
     color: var(--white-color);
-    /* font-size: 2rem; */
   }
 `;
 

@@ -30,7 +30,6 @@ const AboutStyled = styled.section`
       left: 0;
       width: 100%;
       height: 100%;
-      /* background: linear-gradient(#f00, #f0f); */
       background: linear-gradient(#2196f3, #e91e63);
       clip-path: circle(12% at right 35%);
       z-index: -1;

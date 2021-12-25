@@ -20,12 +20,6 @@ function BlogsPage() {
                   </div>
                   <p>{blog.title}</p>
                 </Link>
-                {/* <div className="title">
-                  <a href={blog.link}>
-                                        {blog.title}
-                                    </a>
-                  <Link to={blog.link}>{blog.title}</Link>
-                </div> */}
               </div>
             );
           })}

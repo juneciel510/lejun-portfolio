@@ -34,12 +34,6 @@ const MenuItemStyled = styled.div`
   display: flex;
   justify-content: center;
   .items {
-    /* display: inline-flex;
-    flex-wrap: wrap;
-    margin: auto; */
-
-    /* display: inline-grid;
-    grid-template-columns: repeat(auto-fill, minmax(370px, max-content)); */
     max-width: 2800px;
     display: inline-grid;
     grid-template-columns: repeat(4, 1fr);
@@ -65,21 +59,15 @@ const MenuItemStyled = styled.div`
   }
 
   .portfolio-content {
-    /* flex-grow: 1; */
-    /* display: block; */
     position: relative;
     overflow: hidden;
     border-radius: 7px;
-    /* width: 370px;
-    height: 220px; */
     max-width: 400px;
     min-width: 340px;
     margin: 10px;
     img {
       width: 100%;
       height: 100%;
-      /* width: 370px;
-      height: 220px; */
       object-fit: cover;
       transition: all 0.4s ease-in-out;
       margin: 0;
@@ -97,11 +85,9 @@ const MenuItemStyled = styled.div`
       margin: auto 0;
     }
     .content {
-      /* transform: translateY(-600px); */
       width: 100%;
       transition: all 0.5s ease-in-out;
       opacity: 1;
-      /* margin: auto 0; */
       text-align: justify;
       transform: translateY(86%);
       height: 100%;
@@ -121,7 +107,6 @@ const MenuItemStyled = styled.div`
       margin: 10px;
       color: var(--primary-color);
       display: block;
-      /* text-align: justify; */
     }
     .title {
       padding: 0;

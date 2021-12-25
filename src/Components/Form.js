@@ -47,7 +47,6 @@ const error = (props) => {
 const FormStyled = styled.div`
   color: var(--white-color);
   input {
-    /* border: 1px solid var(--background-light-color-2); */
     background-color: var(--background-light-color-2);
     color: var(--white-color);
   }

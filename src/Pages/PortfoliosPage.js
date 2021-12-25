@@ -5,8 +5,6 @@ import portfolios from "../data/portfolios";
 import Menu from "../Components/Menu";
 import Button from "../Components/Button";
 
-//const allButtons = ["All", ...new Set(portfolios.map((item) => item.category))];
-
 const allButtons = () => {
   //merge all portfolio Category into an array
   let portfolioCategory = ["All"];
@@ -28,7 +26,6 @@ function PortfoliosPage() {
       return;
     }
 
-    //const filteredData = portfolios.filter(item => item.category === button);
     //modify filter function then one portfolio can fall into multiple categories
     const filteredData = portfolios.filter((item) =>
       item.category.includes(button)

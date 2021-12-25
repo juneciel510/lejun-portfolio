@@ -6,9 +6,7 @@ export const ResponsiveTable = styled.div`
     color: var(--white-color);
   }
   a {
-    /* text-decoration: none; */
     &:hover {
-      /* background-color: var(--primary-color); */
       color: var(--primary-color);
       text-shadow: 1.5px 1.5px 4px var(--primary-color),
         -1.5px -1.5px 4px var(--primary-color);

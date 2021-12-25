@@ -72,10 +72,8 @@ class WeatherPage extends Component {
   getWeather = async (e) => {
     e.preventDefault();
 
-    // const country = e.target.elements.country.value;
     const city = e.target.elements.city.value;
 
-    //if (country && city) {
     if (city) {
       const api_call = await fetch(
         `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${Api_Key}`
@@ -126,13 +124,11 @@ class WeatherPage extends Component {
 
 const WeatherPageStyled = styled.div`
   width: 100%;
-  /* height: 100vh; */
   height: 100%;
   position: absolute;
   .typography {
     position: absolute;
     top: 35%;
-    /* margin-top: -35rem; */
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;

@@ -20,14 +20,14 @@ const blogs = [
     image: blog2,
     link: "/blog2",
   },
-  {
-    id: 3,
-    title: "Learning List",
-    date: "01",
-    month: "April",
-    image: blog3,
-    link: "/blog3",
-  },
+  // {
+  //   id: 3,
+  //   title: "Learning List",
+  //   date: "01",
+  //   month: "April",
+  //   image: blog3,
+  //   link: "/blog3",
+  // },
   {
     id: 4,
     title: "Good tutorials",

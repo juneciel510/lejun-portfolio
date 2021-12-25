@@ -169,7 +169,6 @@ const ResumeStyled = styled.section`
   }
   @media screen and (max-width: 502px) {
     .u-small-title-margin {
-      /* margin-top: 2rem; */
     }
     .small-title {
       padding-bottom: 0.8rem;

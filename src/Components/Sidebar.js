@@ -23,9 +23,6 @@ const SidebarStyled = styled.div`
     z-index: 20;
     width: 8rem;
   }
-  /* @media screen and (max-width: 542px) {
-    width: 8rem;
-  } */
 `;
 
 export default Sidebar;

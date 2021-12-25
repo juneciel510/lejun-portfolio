@@ -8,23 +8,16 @@ import EmailIcon from "@material-ui/icons/Email";
 import LocationOnIcon from "@material-ui/icons/LocationOn";
 import ContactItem from "../Components/ContactItem";
 import emailjs from "emailjs-com";
-//import Alert from "react-popup-alert";
 
 import Popup from "../Components/Popup";
 
 function ContactPage() {
-  //   const [alert, setAlert] = React.useState({
-  //     type: "error",
-  //     text: "This is a alert message",
-  //     show: false,
-  //   });
   const [isOpen, setIsOpen] = useState(false);
 
   const togglePopup = () => {
     console.log("isOpen", isOpen);
     setIsOpen(!isOpen);
   };
-  //const phone = <PhoneIcon />;
   const email = <EmailIcon />;
   const location = <LocationOnIcon />;
   function sendEmail(e) {
@@ -48,41 +41,10 @@ function ContactPage() {
   }
   function sendEmail2(e) {
     console.log("test", e.target);
-    // alert("email sent");
   }
-
-  //   function onShowAlert(type) {
-  //     setAlert({
-  //       type: type,
-  //       text: "Message Sent",
-  //       show: true,
-  //     });
-  //   }
-  //   function onCloseAlert() {
-  //     setAlert({
-  //       type: "",
-  //       text: "",
-  //       show: false,
-  //     });
-  //   }
 
   return (
     <MainLayout>
-      {/* <Alert
-        header={"Header"}
-        btnText={"Close"}
-        text={alert.text}
-        type={alert.type}
-        show={alert.show}
-        onClosePress={onCloseAlert}
-        pressCloseOnOutsideClick={true}
-        showBorderBottom={true}
-        alertStyles={{}}
-        headerStyles={{}}
-        textStyles={{}}
-        buttonStyles={{}}
-      /> */}
-
       <Title title={"Contact"} span={"Contact"} />
       <ContactPageStyled>
         <InnerLayout className={"contact-section"}>
@@ -111,7 +73,6 @@ function ContactPage() {
                 ></textarea>
               </div>
               <div className="form-field f-button">
-                {/* <PrimaryButton title={"Send Email"} /> */}
                 <input
                   type="submit"
                   className="send-mail"
@@ -123,18 +84,15 @@ function ContactPage() {
           </div>
 
           <div className="right-content">
-            {/* <ContactItem title={'Phone'} icon={phone} cont1={'+66-789675637'} cont2={'07663520283'} /> */}
             <ContactItem
               title={"Email"}
               icon={email}
               cont1={"chenlejun@gmail.com"}
-              // cont2={""}
             />
             <ContactItem
               title={"Address"}
               icon={location}
               cont1={"Stavanger, Norway"}
-              // cont2={""}
             />
           </div>
           {isOpen && (
@@ -155,7 +113,6 @@ function ContactPage() {
 }
 
 const ContactPageStyled = styled.section`
-  /* margin-right: 1rem; */
   .popup-button {
     outline: none;
     border: none;

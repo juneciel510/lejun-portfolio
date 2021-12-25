@@ -21,5 +21,4 @@ export const InnerLayout = styled.div`
   @media screen and (max-width: 571px) {
     padding: 2rem 0.4rem;
   }
-  /* border: 5px solid red; */
 `;

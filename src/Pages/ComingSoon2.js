@@ -8,13 +8,11 @@ const ComingSoon2 = () => {
   return (
     <ComingSoon2Styled>
       <h1>Coming Soon...</h1>
-      {/* <BackgroundClipText text={"Coming Soon..."} />; */}
     </ComingSoon2Styled>
   );
 };
 
 const ComingSoon2Styled = styled.div`
-  /* background-image: url("../img/sidebar1.jpg"); */
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -25,13 +23,9 @@ const ComingSoon2Styled = styled.div`
     font-weight: 1000;
     font-size: 5rem;
     background-image: url("https://i.gifer.com/fxVE.gif");
-    /* background-image: url("https://i.gifer.com/8VvO.gif"); */
-    /* background-size: cover; */
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
-    /* background-position: bottom right; */
-    /* background-size: cover; */
   }
 `;
 

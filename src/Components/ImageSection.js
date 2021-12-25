@@ -23,20 +23,6 @@ function ImageSection() {
           a new career as a developer with the passion of coding.
         </p>
         <div className="about-info item">
-          {/* <div className="info-title">
-            <p>Full Name</p>
-            <p>Gender</p>
-            <p>Age</p>
-            <p>Languages </p>
-            <p>Location</p>
-          </div>
-          <div className="info">
-            <p>: Lejun Chen</p>
-            <p>: Female</p>
-            <p>: 40</p>
-            <p>: Mandarin, English, Norwegian </p>
-            <p>: Stavanger, Norway</p>
-          </div> */}
           <table class="a">
             <tr>
               <th scope="row">Name</th>
@@ -96,14 +82,6 @@ const ImageSectionStyled = styled.div`
   }
   .right-content {
     width: 100%;
-    /* h4 {
-      font-size: 2.2rem;
-      color: var(--white-color);
-      span {
-        font-size: 2rem;
-        color: var(--primary-color);
-      }
-    } */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -132,7 +110,6 @@ const ImageSectionStyled = styled.div`
       width: 100%;
       vertical-align: top;
       th {
-        /* background: lightblue; */
         vertical-align: top;
         color: var(--white-color);
       }

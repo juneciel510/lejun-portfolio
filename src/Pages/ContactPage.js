@@ -82,21 +82,6 @@ function ContactPage() {
   return (
     <ContactPageStyled>
       <MainLayout>
-        {/* <Alert
-        header={"Header"}
-        btnText={"Close"}
-        text={alert.text}
-        type={alert.type}
-        show={alert.show}
-        onClosePress={onCloseAlert}
-        pressCloseOnOutsideClick={true}
-        showBorderBottom={true}
-        alertStyles={{}}
-        headerStyles={{}}
-        textStyles={{}}
-        buttonStyles={{}}
-      /> */}
-
         <Title title={"Contact"} span={"Contact"} />
         <div className="container">
           <InnerLayout>
@@ -161,10 +146,6 @@ function ContactPage() {
 }
 
 const ContactPageStyled = styled.section`
-  /* margin-right: 1rem; */
-
-  /* height: 100vh; */
-  /* display: flex; */
   .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -174,7 +155,6 @@ const ContactPageStyled = styled.section`
   }
 
   .glasscard {
-    /* margin-top: 8vh; */
     box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
     border-radius: 15px;
     background: rgba(255, 255, 255, 0.1);
@@ -182,27 +162,8 @@ const ContactPageStyled = styled.section`
     border-left: 1px solid rgba(255, 255, 255, 0.5);
     backdrop-filter: blur(5px);
     display: block;
-    /* margin: 0 8rem; */
     padding: 7vh 12vw;
   }
-  /* .popup-button {
-    outline: none;
-    border: none;
-    background-color: var(--background-light-color-2);
-    padding: 0rem 2rem;
-    font-size: inherit;
-    color: var(--white-color);
-    cursor: pointer;
-    transition: all 0.4s ease-in-out;
-    margin-bottom: 0.6rem;
-    &:active,
-    &:focus {
-      background-color: var(--primary-color);
-    }
-    &:hover {
-      background-color: var(--primary-color);
-    }
-  } */
 
   .contact-title {
     h4 {
@@ -222,14 +183,10 @@ const ContactPageStyled = styled.section`
     grid-column: 1 / 3;
   }
   .form .form-field {
-    /* margin-bottom: 2rem; */
     position: relative;
     width: 100%;
   }
   .form .form-field label {
-    /* position: absolute;
-      left: 20px;
-      top: -19px; */
     display: inline-block;
     background: transparent;
     padding: 0 0.5rem;
@@ -261,7 +218,6 @@ const ContactPageStyled = styled.section`
     height: 40px;
     line-height: 40px;
     background-color: var(--background-light-color);
-    /* padding: 0.8rem 2.5rem 1.5rem 2.5rem; */
     color: var(--white-color);
     cursor: pointer;
     display: inline-block;
@@ -269,27 +225,11 @@ const ContactPageStyled = styled.section`
     text-transform: uppercase;
     position: relative;
     &:hover {
-      /* background-color: var(--primary-color); */
       color: var(--primary-color);
       box-shadow: 2px 0px 4px var(--primary-color),
         -2px 0px 4px var(--primary-color), 0px -2px 4px var(--primary-color),
         0px 2px 4px var(--primary-color);
     }
-    /* transition: all 0.4s ease-in-out; */
-    /* &::after {
-      content: "";
-      position: absolute;
-      width: 0;
-      height: 0.2rem;
-      transition: all 0.4s ease-in-out;
-      left: 0;
-      bottom: 0;
-      opacity: 0.7;
-    } */
-    /* &:hover::after {
-      width: 100%;
-      background-color: var(--white-color);
-    } */
   }
 
   .send-mail {
@@ -302,27 +242,13 @@ const ContactPageStyled = styled.section`
     left: 0;
     width: 100%;
     height: 100%;
-    /* background: linear-gradient(#f00, #f0f); */
     background: linear-gradient(#2196f3, #e91e63);
     clip-path: circle(20% at right 40%);
   }
 
-  /* &::after{
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: linear-gradient(#2196f3, #e91e63);
-        clip-path: circle(20% at 10% 10%);
-    
-} */
   .message-sent {
     transition: opacity 1s ease;
-    /* display: none; */
     opacity: 0;
-    /* visibility: "hidden"; */
     h6 {
       height: 40px;
       line-height: 40px;

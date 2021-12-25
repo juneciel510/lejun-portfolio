@@ -28,20 +28,7 @@ const PrimaryButtonStyled = styled.a`
   a {
     text-decoration: none;
   }
-  /* &::after {
-    content: "";
-    position: absolute;
-    width: 0;
-    height: 0.2rem;
-    transition: all 0.4s ease-in-out;
-    left: 0;
-    bottom: 0;
-    opacity: 0.7;
-  }
-  &:hover::after {
-    width: 100%;
-    background-color: var(--white-color);
-  } */
+
   &:hover {
     box-shadow: 2px 0px 4px var(--primary-color),
       -2px 0px 4px var(--primary-color), 0px -2px 4px var(--primary-color),

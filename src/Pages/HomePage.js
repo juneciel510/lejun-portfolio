@@ -8,9 +8,6 @@ import Particle from "../Components/Particle";
 function HomePage() {
   return (
     <HomePageStyled>
-      {/* <div className="particle-con">
-        <Particle />
-      </div> */}
       <div className="typography">
         <h1>
           Hi, I'm <span>Lejun Chen</span>
@@ -19,17 +16,6 @@ function HomePage() {
           Master Candidate in Computer Science at University of Stavanger,
           Norway.
         </p>
-        {/* <div className="icons">
-                    <a href="https://codepen.io/pen/" className="icon i-facebook">
-                        <FacebookIcon />
-                    </a>
-                    <a href="https://codepen.io/pen/" className="icon i-github">
-                        <GithubIcon />
-                    </a>
-                    <a href="https://codepen.io/pen/" className="icon i-youtube">
-                        <YoutubeIcon />
-                    </a>
-                </div> */}
       </div>
     </HomePageStyled>
   );

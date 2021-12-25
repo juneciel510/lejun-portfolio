@@ -8,9 +8,6 @@ import WeatherButton from "./WeatherButton";
 function Navigation() {
   return (
     <NavigationStyled>
-      {/* <div className="avatar">
-        <img src={sidebar1} alt="" />
-      </div> */}
       <div className="nav-items">
         <ul className="nav-items">
           <li className="nav-item">
@@ -23,11 +20,6 @@ function Navigation() {
               About
             </NavLink>
           </li>
-          {/* <li className="nav-item">
-            <NavLink to="/resume" activeClassName="active-class" exact>
-              Resume
-            </NavLink>
-          </li> */}
           <li className="nav-item">
             <NavLink to="/portfolios" activeClassName="active-class" exact>
               Portfolios
@@ -58,7 +50,6 @@ function Navigation() {
 const NavigationStyled = styled.nav`
   text-decoration: none;
   display: flex;
-  /* justify-content: space-between; */
   flex-direction: column;
   align-items: center;
   height: 100%;

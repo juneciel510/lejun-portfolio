@@ -33,27 +33,6 @@ function Menu({ menuItem }) {
 }
 
 const MenuItemStyled = styled.div`
-  /* display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 1rem;
-  @media screen and (max-width: 1600px) {
-    grid-template-columns: repeat(3, 1fr);
-  }
-  @media screen and (max-width: 920px) {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  @media screen and (max-width: 670px) {
-    grid-template-columns: repeat(1, 1fr);
-    grid-gap: 1rem;
-  } */
-  /* display: flex;
-  flex-direction: row;
-  justify-content: center;
-  margin: 0, auto;
-  .portfolio-container {
- 
-  } */
-
   .portfolio-container {
     display: flex;
     flex-direction: row;
@@ -63,23 +42,13 @@ const MenuItemStyled = styled.div`
   }
   .items {
     position: relative;
-    /* width: fit-content; */
     display: inline-flex;
-    /* display: --webkit-inline-flex; */
-    /* width: auto; */
     flex-direction: row;
     margin: auto;
-    /* justify-content: center; */
-    /* align-items: center; */
-    /* max-width: 1200px; */
     flex-wrap: wrap;
-    /* vertical-align: top;
-    box-sizing: border-box; */
   }
   .grid-item {
     .portfolio-content {
-      /* flex-grow: 1; */
-      /* display: block; */
       position: relative;
       overflow: hidden;
       border-radius: 7px;
@@ -87,8 +56,6 @@ const MenuItemStyled = styled.div`
       height: 220px;
       margin: 15px;
       img {
-        /* width: 100%;
-        height: 100%; */
         width: 370px;
         height: 220px;
         object-fit: cover;
@@ -108,11 +75,9 @@ const MenuItemStyled = styled.div`
         margin: auto 0;
       }
       .content {
-        /* transform: translateY(-600px); */
         width: 100%;
         transition: all 0.5s ease-in-out;
         opacity: 1;
-        /* margin: auto 0; */
         text-align: justify;
         transform: translateY(86%);
         height: 100%;
@@ -132,7 +97,6 @@ const MenuItemStyled = styled.div`
         margin: 10px;
         color: var(--primary-color);
         display: block;
-        /* text-align: justify; */
       }
       .title {
         padding: 0;

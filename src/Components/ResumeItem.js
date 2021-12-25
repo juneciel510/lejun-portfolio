@@ -28,7 +28,6 @@ const ResumeItemStyled = styled.div`
   display: grid;
   grid-template-columns: 1fr 5fr;
   h5 {
-    /* font-size: 1.2rem; */
   }
   @media screen and (max-width: 502px) {
     display: block;

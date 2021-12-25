@@ -18,14 +18,6 @@ const SearchBar = (props) => {
               autoComplete="on"
             />
 
-            {/* <input
-              type="text"
-              className="country"
-              placeholder="Country"
-              name="country"
-              autoComplete="on"
-            /> */}
-
             <button className="search-form__btn" type="submit">
               <FontAwesomeIcon icon={faSearch} />
             </button>
@@ -56,12 +48,7 @@ const SearchBarStyled = styled.div`
     width: 50%;
     justify-content: center;
   }
-  /* @media screen and (max-width: 1600px) {
-    .row {
-      margin: auto;
-      width: 50%;
-    }
-  } */
+
   .mx-5 {
     margin-right: 1rem !important;
     margin-left: 1rem !important;
@@ -82,10 +69,7 @@ const SearchBarStyled = styled.div`
     background-color: var(--background-dark-color);
   }
   input {
-    /* border: 1px solid var(--background-light-color-2); */
     background-color: var(--background-light-color);
-    /* background: transparent; */
-    /* background-color: var(--background-dark-color); */
     border: 1px solid var(--white-color);
     color: var(--white-color);
     width: 77%;
@@ -113,10 +97,6 @@ const SearchBarStyled = styled.div`
     border-bottom-left-radius: 0.5rem; */
     border-radius: 0.5rem;
   }
-  /* .country {
-    border-top-right-radius: 0.5rem;
-    border-bottom-right-radius: 0.5rem;
-  } */
 
   .search-form__btn {
     width: 6%;
@@ -128,7 +108,6 @@ const SearchBarStyled = styled.div`
       color: var(--white-color);
     }
     .fa-search {
-      /* color: var(--weather); */
       color: var(--white-color);
       vertical-align: -0.3rem;
       margin-left: 0.2rem;
