@@ -13,7 +13,7 @@ function HomePage() {
           Hi, I'm <span>Lejun Chen</span>
         </h1>
         <p>
-          Master Candidate in Computer Science at University of Stavanger,
+          Software Developer living in Stavanger,
           Norway.
         </p>
       </div>

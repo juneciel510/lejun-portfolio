@@ -39,7 +39,7 @@ function Navigation() {
       </div>
       <footer className="footer">
         <p>
-          @2021 <b>Lejun Chen</b>
+          @2025 <b>Lejun Chen</b>
         </p>
         <WeatherButton className="weather" />
       </footer>

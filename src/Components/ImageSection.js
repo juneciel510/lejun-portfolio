@@ -16,11 +16,9 @@ function ImageSection() {
           I am <span>Lejun Chen</span>
         </h3>
         <p className="paragraph item">
-          Computer Science student of a two years’ master program at the
-          University of Stavanger. Moved to Stavanger in 2019 with the whole
-          family. Have 10+ years’ work experience as a project coordinator and
-          document engineer. I enjoy the fun of coding and look forward to start
-          a new career as a developer with the passion of coding.
+                  Passionate Software Developer with expertise in all stages of software development.
+                  Demonstrates the ability to effectively self manage during independent projects and collaborate efficiently within team settings.
+                  Proven track record of quickly learning new technologies and consistently achieving client success and satisfaction.
         </p>
         <div className="about-info item">
           <table class="a">
@@ -38,7 +36,7 @@ function ImageSection() {
             </tr>
             <tr>
               <th scope="row">Skills</th>
-              <td>Javascript, React, Go, Python, R</td>
+              <td>C#, .Net, Python, Javascript, React, Go, Git, CI/CD, Powershell Scripting, CSS, Docker, R</td>
             </tr>
             <tr>
               <th scope="row">Location</th>
