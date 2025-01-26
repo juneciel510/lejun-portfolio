@@ -1,27 +1,27 @@
 {
   "files": {
     "main.css": "/lejun-portfolio/static/css/main.53a18ad0.chunk.css",
-    "main.js": "/lejun-portfolio/static/js/main.f594552e.chunk.js",
-    "main.js.map": "/lejun-portfolio/static/js/main.f594552e.chunk.js.map",
+    "main.js": "/lejun-portfolio/static/js/main.fc93d1b8.chunk.js",
+    "main.js.map": "/lejun-portfolio/static/js/main.fc93d1b8.chunk.js.map",
     "runtime-main.js": "/lejun-portfolio/static/js/runtime-main.bd2b7db5.js",
     "runtime-main.js.map": "/lejun-portfolio/static/js/runtime-main.bd2b7db5.js.map",
     "static/css/2.b9f8eb14.chunk.css": "/lejun-portfolio/static/css/2.b9f8eb14.chunk.css",
-    "static/js/2.597d7569.chunk.js": "/lejun-portfolio/static/js/2.597d7569.chunk.js",
-    "static/js/2.597d7569.chunk.js.map": "/lejun-portfolio/static/js/2.597d7569.chunk.js.map",
+    "static/js/2.2043ccb5.chunk.js": "/lejun-portfolio/static/js/2.2043ccb5.chunk.js",
+    "static/js/2.2043ccb5.chunk.js.map": "/lejun-portfolio/static/js/2.2043ccb5.chunk.js.map",
     "index.html": "/lejun-portfolio/index.html",
     "static/css/2.b9f8eb14.chunk.css.map": "/lejun-portfolio/static/css/2.b9f8eb14.chunk.css.map",
     "static/css/main.53a18ad0.chunk.css.map": "/lejun-portfolio/static/css/main.53a18ad0.chunk.css.map",
-    "static/js/2.597d7569.chunk.js.LICENSE.txt": "/lejun-portfolio/static/js/2.597d7569.chunk.js.LICENSE.txt",
-    "static/media/CV_of_Lejun_Chen_no_contact.6fd68544.pdf": "/lejun-portfolio/static/media/CV_of_Lejun_Chen_no_contact.6fd68544.pdf",
+    "static/js/2.2043ccb5.chunk.js.LICENSE.txt": "/lejun-portfolio/static/js/2.2043ccb5.chunk.js.LICENSE.txt",
     "static/media/ExamReport_Lejun4.fac3746b.pdf": "/lejun-portfolio/static/media/ExamReport_Lejun4.fac3746b.pdf",
+    "static/media/LejunChen_SoftwareDeveloper_2025_NoContact.7d37efaa.pdf": "/lejun-portfolio/static/media/LejunChen_SoftwareDeveloper_2025_NoContact.7d37efaa.pdf",
     "static/media/ML_lab3.27f5ba22.pdf": "/lejun-portfolio/static/media/ML_lab3.27f5ba22.pdf",
     "static/media/ML_lab3.d4b77e4e.PNG": "/lejun-portfolio/static/media/ML_lab3.d4b77e4e.PNG",
     "static/media/alice.933d58c5.PNG": "/lejun-portfolio/static/media/alice.933d58c5.PNG",
     "static/media/avatar.0945d7c4.jpg": "/lejun-portfolio/static/media/avatar.0945d7c4.jpg",
     "static/media/bank.bbc1a370.png": "/lejun-portfolio/static/media/bank.bbc1a370.png",
-    "static/media/blog1.7ecbb78c.svg": "/lejun-portfolio/static/media/blog1.7ecbb78c.svg",
-    "static/media/blog2.09939351.svg": "/lejun-portfolio/static/media/blog2.09939351.svg",
-    "static/media/blog3.6291ee7c.svg": "/lejun-portfolio/static/media/blog3.6291ee7c.svg",
+    "static/media/blog1.aa2f074c.svg": "/lejun-portfolio/static/media/blog1.aa2f074c.svg",
+    "static/media/blog2.df7996bd.svg": "/lejun-portfolio/static/media/blog2.df7996bd.svg",
+    "static/media/blog3.969725e8.svg": "/lejun-portfolio/static/media/blog3.969725e8.svg",
     "static/media/blog4.60aa6cec.svg": "/lejun-portfolio/static/media/blog4.60aa6cec.svg",
     "static/media/book.637a6887.svg": "/lejun-portfolio/static/media/book.637a6887.svg",
     "static/media/collaborate.09ee29a3.svg": "/lejun-portfolio/static/media/collaborate.09ee29a3.svg",
@@ -43,8 +43,8 @@
   "entrypoints": [
     "static/js/runtime-main.bd2b7db5.js",
     "static/css/2.b9f8eb14.chunk.css",
-    "static/js/2.597d7569.chunk.js",
+    "static/js/2.2043ccb5.chunk.js",
     "static/css/main.53a18ad0.chunk.css",
-    "static/js/main.f594552e.chunk.js"
+    "static/js/main.fc93d1b8.chunk.js"
   ]
 }
